@@ -1,0 +1,123 @@
+{
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-10-04",
+  "package": {
+    "name": "qiaomu-codex-imagegen",
+    "version": "0.2.0",
+    "owner": "Qiaomu",
+    "maturity_tier": "production",
+    "lifecycle_stage": "production",
+    "upstream_inspiration": "https://github.com/joeseesun/qiaomu-mondo-poster-design",
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "Generate or edit images with Codex's built-in image generation from any agent, through an MCP tool or a plain CLI, with Qiaomu poster / video cover / Xiaohongshu prompt craft built in. Use for 生图, 配图, 海报, 视频海报, 视频封面, 小红书配图, 公众号封面, X 封面, 朋友圈海报, 书籍封面, 专辑封面, Mondo 风格, 图生图 and \"用 Codex 画一张\". Picks the scenario ratio and safe areas, a style from 86 bundled styles (66 general + 20 Mondo poster artists), writes the prompt, calls Codex, and returns the saved file path and pixel size. Excludes: editing photos with local tools, charts or diagrams from data, UI mockups, video generation, or anything that needs an API key-based image service.\n",
+    "job_to_be_done": "Generate or edit images with Codex's built-in image generation from any agent, through an MCP tool or a plain CLI, with Qiaomu poster / video cover / Xiaohongshu prompt craft built in. Use for 生图, 配图, 海报, 视频海报, 视频封面, 小红书配图, 公众号封面, X 封面, 朋友圈海报, 书籍封面, 专辑封面, Mondo 风格, 图生图 and \"用 Codex 画一张\". Picks the scenario ratio and safe areas, a style from 86 bundled styles (66 general + 20 Mondo poster artists), writes the prompt, calls Codex, and returns the saved file path and pixel size. Excludes: editing photos with local tools, charts or diagrams from data, UI mockups, video generation, or anything that needs an API key-based image service.\n",
+    "target_users": [
+      "Qiaomu operator"
+    ],
+    "inputs": [],
+    "outputs": [],
+    "exclusions": [],
+    "qiaomu_defaults": {
+      "skill_name_prefix": "qiaomu-",
+      "max_preferred_hyphen_parts": 3,
+      "copyright": "Copyright (c) 向阳乔木",
+      "x": "https://x.com/vista8",
+      "github": "https://github.com/joeseesun/"
+    }
+  },
+  "triggers": {
+    "should_trigger": [
+      "用 codex 帮我生成一张小红书配图 风格要 mondo",
+      "给这期视频做一张视频封面 16:9 用 codex 画",
+      "Generate a poster with Codex image generation in Mondo style",
+      "用 mcp 调用 codex 图片生成 做一个公众号封面 提示词帮我写好",
+      "把这个视频海报换成 olly moss 风格 用 codex 重新画"
+    ],
+    "should_not_trigger": [
+      "用 python 画一个折线图 展示销量数据",
+      "帮我写一篇公众号文章",
+      "把这段视频剪成 30 秒 加字幕",
+      "设计一个 App 登录页的 figma 原型"
+    ],
+    "near_neighbor": [
+      "text to video 生成一段 5 秒的视频 用 codex",
+      "把海报做成数据可视化图表"
+    ]
+  },
+  "workflow": {
+    "router_rules": [],
+    "compact_workflow": [],
+    "gate_ladder": [],
+    "output_contract": []
+  },
+  "resources": {
+    "references": [
+      "references/mondo/artist-styles.md",
+      "references/mondo/book-covers.md",
+      "references/mondo/composition-patterns.md",
+      "references/mondo/genre-templates.md",
+      "references/mondo-artists.json",
+      "references/mondo-poster.md",
+      "references/presets.json",
+      "references/prompt-craft.md",
+      "references/scenarios.md",
+      "references/styles.json"
+    ],
+    "scripts": [],
+    "evals": [
+      "evals/trigger_cases.json"
+    ],
+    "reports": [
+      "reports/creation-handoff.md",
+      "reports/prior-art-candidates.json",
+      "reports/prior-art-research.md",
+      "reports/prior-art-run.log",
+      "reports/skill-ir.json",
+      "reports/trigger-eval.json"
+    ]
+  },
+  "portability": {
+    "canonical_format": "agent-skills",
+    "adapter_targets": [
+      "claude",
+      "openai",
+      "generic",
+      "agent-skills-compatible"
+    ],
+    "activation": {
+      "mode": "manual",
+      "paths": []
+    },
+    "execution": {
+      "context": "inline",
+      "shell": "bash"
+    },
+    "trust": {
+      "source_tier": "local",
+      "remote_inline_execution": "forbid",
+      "remote_metadata_policy": "allow catalog metadata and read-only source review; forbid unreviewed execution",
+      "generated_public_claims": "evidence-bound"
+    },
+    "permissions": {
+      "network": "none directly; the Codex CLI it launches contacts the user's Codex account",
+      "file_write": "image output directory only (default ~/Pictures/qiaomu-codex-imagegen)",
+      "subprocess": "codex app-server (stdio), sandboxed to the output directory, approval policy never, no network for tools",
+      "interactive": "avoid"
+    },
+    "degradation": {
+      "claude": "mcp-tool-or-cli",
+      "openai": "cli",
+      "generic": "cli",
+      "agent-skills-compatible": "cli"
+    }
+  },
+  "gates": {},
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}

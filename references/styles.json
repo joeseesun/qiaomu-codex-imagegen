@@ -1,0 +1,835 @@
+{
+  "minimalist": {
+    "name": "极简线条",
+    "description": "现代极简，单色或双色，减法美学",
+    "prompt": "优雅简约，单色或双色线条，精准流畅的笔触，纯白背景，极度克制的细节，现代高级感。",
+    "suffix": "超宽横向构图，画面宽度是高度的约两倍，电影级宽屏比例，连续流畅的细线条，一笔成形的优雅感，大量留白和呼吸感，减法美学，只保留最必要的线条，精准而克制，留白即是画面的一部分。画面中不要任何文字、数字、标注、符号",
+    "use_cases": [
+      "知识分享",
+      "思考类文章",
+      "教程文档",
+      "产品介绍"
+    ]
+  },
+  "newyorker": {
+    "name": "纽约客",
+    "description": "经典黑白钢笔速写，朱红色点缀",
+    "prompt": "Black ink drawing on white paper, fine pen strokes, minimalist, sophisticated, single scene, clean background, vermilion red accent. NO BOTTOM TEXT BAR, NO CAPTION, NO TITLE AREA.",
+    "suffix": "Pure ink illustration only. NO TEXT, NO WORDS, NO LETTERS anywhere. No bottom text bar. No caption area. Just the scene. VERMILION RED ACCENT ONLY.",
+    "use_cases": [
+      "观点评论",
+      "文化分析",
+      "幽默故事",
+      "社评杂感"
+    ]
+  },
+  "pen-sketch": {
+    "name": "钢笔速写",
+    "description": "黑白线条为主，朱红色点缀",
+    "prompt": "钢笔速写，黑白线条为主，朱红色点缀重点，简约留白。",
+    "suffix": "宽幅横向构图，画面铺满整个画布，手绘松弛质感。画面中不要任何文字、数字、标注、符号。NO BLACK BARS, NO LETTERBOX, NO BORDER.",
+    "use_cases": [
+      "叙事文章",
+      "旅行笔记",
+      "人物采访",
+      "生活随笔"
+    ]
+  },
+  "minimalist-lines": {
+    "name": "极简线条画",
+    "description": "大量留白，减法美学",
+    "prompt": "极简线条风格，大量留白，减法美学，黑色细线勾勒轮廓。",
+    "suffix": "简洁构图，元素精简到最少，负空间占主导，几何化处理。画面不要文字、装饰、多余细节。",
+    "use_cases": [
+      "极简风格文章",
+      "创意概念",
+      "建筑设计",
+      "品牌视觉"
+    ]
+  },
+  "morandi": {
+    "name": "莫兰迪色系",
+    "description": "极低饱和度，灰调柔和",
+    "prompt": "莫兰迪色系，极低饱和度，灰调柔和，淡雅克制的配色。",
+    "suffix": "平衡构图，色块简洁，雾蒙蒙的质感，静谧氛围。避免高饱和度色彩、强烈对比、鲜艳元素。",
+    "use_cases": [
+      "文艺评论",
+      "设计分享",
+      "美学讨论",
+      "人文科普"
+    ]
+  },
+  "negative-space": {
+    "name": "负空间设计",
+    "description": "巧用留白形成隐藏图案",
+    "prompt": "负空间设计，巧用留白形成隐藏图案，双重视觉效果。",
+    "suffix": "聪明的正负形关系，空白区域与实体图形互为图底，简洁有力的视觉冲击。不要填满画面、不要复杂细节。",
+    "use_cases": [
+      "创意文章",
+      "设计思维",
+      "视觉拆解",
+      "概念诠释"
+    ]
+  },
+  "geometric-abstract": {
+    "name": "几何抽象",
+    "description": "规则图形组合，现代主义美学",
+    "prompt": "几何抽象风格，规则图形组合，色块拼接，现代主义美学。",
+    "suffix": "理性构图，直线与曲线的平衡，色彩对比，数学般的精确。不要有机形态、自然元素、随机笔触。",
+    "use_cases": [
+      "现代艺术",
+      "设计理论",
+      "技术概念",
+      "抽象思维"
+    ]
+  },
+  "watercolor": {
+    "name": "水彩渲染",
+    "description": "颜色自然晕染，透明叠加",
+    "prompt": "水彩渲染，颜色自然晕染，边缘模糊，透明叠加，湿画法质感。",
+    "suffix": "松弛构图，色彩流动感，留白呼吸空间，手工痕迹。避免锐利边缘、数字感、过度饱和。",
+    "use_cases": [
+      "感悟文章",
+      "艺术欣赏",
+      "创作过程",
+      "美的分享"
+    ]
+  },
+  "ink-painting": {
+    "name": "水墨风格",
+    "description": "中国水墨，墨色浓淡变化",
+    "prompt": "中国水墨风格，墨色浓淡变化，写意手法，留白为画。",
+    "suffix": "意境构图，虚实相生，笔断意连，东方美学。不要西式透视、写实细节、鲜艳色彩。",
+    "use_cases": [
+      "中国文化",
+      "哲学思考",
+      "传统艺术",
+      "意境表达"
+    ]
+  },
+  "isometric": {
+    "name": "等距视图",
+    "description": "30度角斜视，扁平色块",
+    "prompt": "等距视图设计，30度角斜视，扁平色块，立体感但无透视。",
+    "suffix": "整齐构图，建筑感，模块化元素，清晰的空间关系。不要自然透视、有机形态、真实光影。",
+    "use_cases": [
+      "技术架构",
+      "产品设计",
+      "空间关系",
+      "复杂系统"
+    ]
+  },
+  "pixel-art": {
+    "name": "像素艺术",
+    "description": "8-bit复古游戏质感",
+    "prompt": "像素艺术风格，8-bit/16-bit复古游戏质感，有限色板，方块像素点，锯齿边缘。",
+    "suffix": "简洁构图，平面化处理，怀旧游戏机美学。避免渐变色彩、平滑边缘、高细节渲染。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "复古技术",
+      "游戏分析",
+      "怀旧话题",
+      "复古风尚"
+    ]
+  },
+  "low-poly": {
+    "name": "低多边形",
+    "description": "三角形面片构成，现代3D风",
+    "prompt": "低多边形设计，三角形和四边形面片构成，低面数模型，平面着色，几何化抽象形状。",
+    "suffix": "简洁构图，块状几何结构，现代3D风格，清晰的光影分割。避免有机曲线、高细节纹理、真实材质。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "3D设计",
+      "技术美学",
+      "现代艺术",
+      "几何创意"
+    ]
+  },
+  "paper-cut": {
+    "name": "剪纸风格",
+    "description": "多层彩色纸张叠加，手工剪裁质感",
+    "prompt": "剪纸艺术风格，多层彩色纸张叠加，手工剪裁质感，阴影层次分明，儿童画般的纯真感。",
+    "suffix": "平面构图，装饰性图案，对称或重复元素，手工制作痕迹。避免透视深度、写实光影、数字感。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "儿童内容",
+      "手工艺",
+      "传统文化",
+      "温馨故事"
+    ]
+  },
+  "chalkboard": {
+    "name": "粉笔画",
+    "description": "黑板背景，粉笔质感",
+    "prompt": "粉笔画风格，黑板背景，粉笔质感，手写字体效果，教育课堂氛围。",
+    "suffix": "简洁构图，黑板纹理，粉笔颗粒感，教学图解风格。避免彩色背景、平滑线条、数字渲染。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "教学内容",
+      "知识讲解",
+      "学习笔记",
+      "教室氛围"
+    ]
+  },
+  "flat-illustration": {
+    "name": "平面插画",
+    "description": "纯色填充，无渐变无阴影",
+    "prompt": "平面插画风格，简洁的纯色填充，无渐变无阴影，几何化造型，现代简约美学。",
+    "suffix": "平衡构图，色彩区块分明，负空间运用得当，视觉层次清晰。避免复杂纹理、写实光影、过度细节。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "产品推介",
+      "科技新闻",
+      "界面设计",
+      "现代商业"
+    ]
+  },
+  "line-art": {
+    "name": "线描艺术",
+    "description": "精细流畅的黑色线条",
+    "prompt": "线描艺术风格，精细流畅的黑色线条，单色勾勒轮廓，类似钢笔素描但更简洁。",
+    "suffix": "简洁构图，线条为主，少量阴影暗示体积，注重轮廓表达。避免大面积填色、复杂纹理、色彩混杂。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "极简教程",
+      "技能分享",
+      "简洁讲解",
+      "精致表达"
+    ]
+  },
+  "hand-drawn": {
+    "name": "手绘草图",
+    "description": "铅笔或炭笔质感，自然随性",
+    "prompt": "手绘草图风格，铅笔或炭笔质感，保留草稿线条和轻微涂抹痕迹，自然随性。",
+    "suffix": "自然构图，略带不对称，手工绘制感觉，纸张纹理背景。避免完美对称、数字感、过度修饰。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "个人笔记",
+      "随笔思考",
+      "创意过程",
+      "自然风格"
+    ]
+  },
+  "cartoon": {
+    "name": "卡通风格",
+    "description": "夸张表情，明亮饱和色彩",
+    "prompt": "卡通插画风格，夸张的表情和动作，明亮饱和的色彩，简洁的造型，生动有趣。",
+    "suffix": "动态构图，角色表达清晰，色彩对比鲜明，轻松愉快氛围。避免写实比例、灰暗色调、复杂背景。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "幽默段子",
+      "趣味科普",
+      "儿童教育",
+      "轻松话题"
+    ]
+  },
+  "minimal-icon": {
+    "name": "简约图标",
+    "description": "极简几何形状，符号化表达",
+    "prompt": "简约图标风格，极简几何形状，单色或双色设计，高度抽象化，符号化表达。",
+    "suffix": "中心构图，元素精简到极致，负空间巧妙利用，清晰易识别。避免复杂细节、渐变色彩、写实表现。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "品牌设计",
+      "图标文化",
+      "符号美学",
+      "简约表达"
+    ]
+  },
+  "collage": {
+    "name": "拼贴画",
+    "description": "纸质素材剪切拼接，层次叠加",
+    "prompt": "拼贴艺术风格，纸质或数字素材剪切拼接，层次叠加，不同纹理和图案组合。",
+    "suffix": "自由构图，元素看似随意但有意安排，手工制作质感，创意混搭。避免完美对齐、统一风格、数字平滑感。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "创意混搭",
+      "艺术拼贴",
+      "多元观点",
+      "视觉碰撞"
+    ]
+  },
+  "screen-print": {
+    "name": "丝网印刷",
+    "description": "有限色板，轻微错版质感",
+    "prompt": "丝网印刷效果，有限色板（通常2-3色），色彩重叠产生新色调，轻微错版质感。",
+    "suffix": "平面构图，色块分明，手工印刷痕迹，复古设计感。避免渐变色彩、照片质感、过多颜色。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "复古风格",
+      "平面设计",
+      "艺术作品",
+      "印刷美学"
+    ]
+  },
+  "woodcut": {
+    "name": "木刻版画",
+    "description": "黑白强烈对比，木纹质感",
+    "prompt": "木刻版画风格，黑白强烈对比，木纹质感，雕刻线条粗犷有力，传统印刷美感。",
+    "suffix": "高对比构图，黑白分明，纹理表现木材特性，手工雕刻痕迹。避免灰色调、平滑渐变、数字精度。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "传统艺术",
+      "文化遗产",
+      "高对比表达",
+      "经典审美"
+    ]
+  },
+  "pointillism": {
+    "name": "点彩派",
+    "description": "无数小色点构成图像",
+    "prompt": "点彩派绘画风格，无数小色点构成图像，色彩光学混合，印象派光影效果。",
+    "suffix": "细腻构图，点状笔触均匀分布，距离观看时图像融合，柔和过渡。避免大笔触、清晰轮廓、平板色块。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "艺术分析",
+      "细节美学",
+      "光影表达",
+      "印象派风格"
+    ]
+  },
+  "abstract-expressionist": {
+    "name": "抽象表现主义",
+    "description": "色彩泼洒、滴流、挥洒",
+    "prompt": "抽象表现主义风格，色彩泼洒、滴流、挥洒，情感强烈表达，非具象形式。",
+    "suffix": "动态构图，笔触自由奔放，色彩碰撞，情感张力。避免写实形象、规则图案、冷静克制。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "艺术创作",
+      "情感表达",
+      "抽象思维",
+      "激情话题"
+    ]
+  },
+  "surrealist": {
+    "name": "超现实主义",
+    "description": "梦幻不合逻辑的场景",
+    "prompt": "超现实主义风格，梦幻不合逻辑的场景，日常元素非常规组合，潜意识意象。",
+    "suffix": "奇异构图，元素比例反常，空间关系扭曲，神秘氛围。避免现实逻辑、常规透视、平凡场景。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "梦幻创意",
+      "想象力",
+      "非理性思维",
+      "超现实场景"
+    ]
+  },
+  "manga": {
+    "name": "日本漫画",
+    "description": "黑白线条，速度线效果",
+    "prompt": "日本漫画风格，黑白线条为主，速度线效果，夸张表情符号，动态分镜感。",
+    "suffix": "动态构图，焦点突出，漫画格效果，戏剧性表达。避免写实色彩、静态姿势、西方漫画风格。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "动漫文化",
+      "故事叙述",
+      "戏剧表现",
+      "日本风格"
+    ]
+  },
+  "children-book": {
+    "name": "儿童绘本",
+    "description": "温暖柔和色彩，可爱造型",
+    "prompt": "儿童绘本风格，温暖柔和色彩，简单可爱造型，友好角色设计，故事书质感。",
+    "suffix": "亲切构图，元素圆润安全，色彩和谐，充满童趣。避免锐利边缘、暗黑色调、成人主题。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "儿童科普",
+      "亲子教育",
+      "温馨故事",
+      "柔和叙事"
+    ]
+  },
+  "vintage-scientific": {
+    "name": "复古科学插图",
+    "description": "老式教科书质感，剖面图效果",
+    "prompt": "复古科学插图风格，老式教科书质感，手写标签，剖面图效果，褪色纸张色调。",
+    "suffix": "教育构图，图解风格，标注线示意，知识性呈现。避免现代UI、鲜艳色彩、随意艺术感。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "科学原理",
+      "技术解析",
+      "知识讲解",
+      "复古学术"
+    ]
+  },
+  "simple-outline": {
+    "name": "简单线描",
+    "description": "极简线条，2-3笔完成",
+    "prompt": "简单线描风格，极简线条，清晰轮廓，2-3笔完成。",
+    "suffix": "大量留白，线条轻盈，构图简洁。避免复杂细节、过多元素、密集线条。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "极简表达",
+      "清晰讲解",
+      "快速草稿",
+      "核心概念"
+    ]
+  },
+  "soft-shape": {
+    "name": "柔和形状",
+    "description": "圆润柔和的色块，无锐角",
+    "prompt": "柔和形状风格，圆润柔和的色块，无锐角，温馨感。",
+    "suffix": "色块层次清晰，柔和过渡，构图平衡。避免尖锐边缘、强对比色、复杂形状。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "温馨内容",
+      "柔和叙述",
+      "儿童友好",
+      "温暖氛围"
+    ]
+  },
+  "minimal-geo": {
+    "name": "极简几何",
+    "description": "简单几何图形组合，3-5个元素",
+    "prompt": "极简几何风格，简单几何图形组合，3-5个元素，网格对齐。",
+    "suffix": "几何排列有序，留白充足，构图严谨。避免有机形态、复杂组合、不规则图形。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "现代设计",
+      "几何表达",
+      "简洁构图",
+      "秩序之美"
+    ]
+  },
+  "gentle-tint": {
+    "name": "柔和色调",
+    "description": "低饱和度单色调，宁静感",
+    "prompt": "柔和色调风格，低饱和度单色调，灰调为主，宁静感。",
+    "suffix": "色彩渐变，温和过渡，构图和谐。避免高饱和度、强对比色、鲜艳色彩。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "宁静思考",
+      "文艺表达",
+      "冥想主题",
+      "柔和氛围"
+    ]
+  },
+  "clean-sketch": {
+    "name": "清洁草图",
+    "description": "轻盈的手绘线条，干净整洁",
+    "prompt": "清洁草图风格，轻盈的手绘线条，干净整洁，纸张质感。",
+    "suffix": "线条稀疏，构图简洁，留白合理。避免污渍、复杂纹理、过度涂抹。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "快速笔记",
+      "初期想法",
+      "草稿阶段",
+      "清晰表达"
+    ]
+  },
+  "flat-simple": {
+    "name": "扁平简约",
+    "description": "纯色扁平化设计，无渐变无阴影",
+    "prompt": "扁平简约风格，纯色扁平化设计，无渐变无阴影。",
+    "suffix": "色块明确，边界清晰，构图几何。避免立体感、阴影效果、渐变色彩。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "商业展示",
+      "产品介绍",
+      "现代应用",
+      "简洁美学"
+    ]
+  },
+  "airy-illustration": {
+    "name": "空灵插画",
+    "description": "轻盈留白，梦幻感，半透明",
+    "prompt": "空灵插画风格，轻盈留白，梦幻感，半透明效果。",
+    "suffix": "大量负空间，元素悬浮，构图空灵。避免拥挤、厚重感、强烈色彩。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "梦幻表达",
+      "诗意文章",
+      "空灵氛围",
+      "想象力"
+    ]
+  },
+  "soft-watercolor": {
+    "name": "柔和水彩",
+    "description": "水彩质感但简化，朦胧感",
+    "prompt": "柔和水彩风格，水彩质感但简化，色彩轻薄，朦胧感。",
+    "suffix": "色彩流动，留白呼吸，构图柔和。避免厚重色彩、锐利边缘、过度饱和。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "柔和叙事",
+      "感悟分享",
+      "艺术欣赏",
+      "朦胧美感"
+    ]
+  },
+  "delicate-line": {
+    "name": "精致线条",
+    "description": "精细但不复杂的线条画",
+    "prompt": "精致线条风格，精细但不复杂的线条画，点线面结合。",
+    "suffix": "线条疏密有致，构图平衡，留白得当。避免密集线条、复杂图案、过度装饰。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "精致表达",
+      "细节讨论",
+      "优雅风格",
+      "精工作品"
+    ]
+  },
+  "gentle-abstract": {
+    "name": "温和抽象",
+    "description": "抽象但柔和，有机形态",
+    "prompt": "温和抽象风格，抽象但柔和，形状圆润，有机形态。",
+    "suffix": "非对称但平衡，构图温和，留白合理。避免尖锐形状、强对比、几何硬朗感。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "温和概念",
+      "抽象但友好",
+      "有机思维",
+      "流动创意"
+    ]
+  },
+  "simple-pattern": {
+    "name": "简单图案",
+    "description": "重复但和谐的简单图案",
+    "prompt": "简单图案风格，重复但和谐的简单图案，节奏感强。",
+    "suffix": "图案规律，构图重复，元素统一。避免复杂图案、不规律组合、过多变化。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "规律讨论",
+      "重复美学",
+      "节奏感",
+      "模式分析"
+    ]
+  },
+  "light-sketch": {
+    "name": "轻盈素描",
+    "description": "轻快的铅笔素描，明暗简洁",
+    "prompt": "轻盈素描风格，轻快的铅笔素描，明暗简洁。",
+    "suffix": "阴影最少，线条流畅，构图轻盈。避免厚重阴影、复杂明暗、粗糙质感。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "快速构思",
+      "轻量级表达",
+      "初稿风格",
+      "灵活思维"
+    ]
+  },
+  "soft-collage": {
+    "name": "柔和拼贴",
+    "description": "柔和的纸片拼贴，色彩统一",
+    "prompt": "柔和拼贴风格，柔和的纸片拼贴，色彩统一。",
+    "suffix": "层次分明但不杂乱，构图和谐，留白得当。避免强对比、复杂层次、杂乱无章。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "柔和混搭",
+      "温馨混合",
+      "和谐组合",
+      "温暖碰撞"
+    ]
+  },
+  "minimal-face": {
+    "name": "简约人像",
+    "description": "简化的人脸特征，符号化表达",
+    "prompt": "简约人像风格，简化的人脸特征，符号化表达。",
+    "suffix": "面部留白，表情温和，构图简洁。避免细节过多、表情夸张、复杂特征。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "人物表达",
+      "人像讨论",
+      "角色定义",
+      "简约风格"
+    ]
+  },
+  "gentle-botanical": {
+    "name": "温和植物",
+    "description": "简单的植物插画，叶子花朵",
+    "prompt": "温和植物风格，简单的植物插画，叶子花朵，优雅姿态。",
+    "suffix": "植物姿态优雅，留白合理，构图自然。避免复杂枝叶、密集细节、野生感。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "自然话题",
+      "植物分享",
+      "生态讨论",
+      "生命美学"
+    ]
+  },
+  "simple-iconic": {
+    "name": "简约符号",
+    "description": "图标化的简单图形，符号性强",
+    "prompt": "简约图标风格，图标化的简单图形，符号性强。",
+    "suffix": "图形居中，对称或非对称，识别度高。避免复杂细节、装饰元素、模糊边界。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "符号设计",
+      "图标文化",
+      "品牌表达",
+      "视觉识别"
+    ]
+  },
+  "airy-landscape": {
+    "name": "空景插画",
+    "description": "简约的风景轮廓，山水天际线",
+    "prompt": "空景插画风格，简约的风景轮廓，山水天际线。",
+    "suffix": "地平线构图，层次简单，留白开阔。避免复杂细节、密集元素、拥挤构图。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "风景欣赏",
+      "地理分享",
+      "开阔意境",
+      "自然美学"
+    ]
+  },
+  "soft-geometric": {
+    "name": "柔和几何",
+    "description": "圆角几何图形，柔和线条",
+    "prompt": "柔和几何风格，圆角几何图形，柔和线条。",
+    "suffix": "几何排列有序，留白平衡，构图温和。避免尖锐角度、硬朗线条、强烈对比。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "柔和设计",
+      "舒适视感",
+      "几何但温暖",
+      "优雅结构"
+    ]
+  },
+  "delicate-doodle": {
+    "name": "精致涂鸦",
+    "description": "精致的手绘涂鸦，线条活泼",
+    "prompt": "精致涂鸦风格，精致的手绘涂鸦，线条活泼。",
+    "suffix": "元素分布自然，有机生长，构图活泼。避免规整排列、僵硬线条、过度控制。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "创意涂鸦",
+      "自由表达",
+      "有机生长",
+      "活泼氛围"
+    ]
+  },
+  "gentle-story": {
+    "name": "温和叙事",
+    "description": "叙事性插画，场景简洁",
+    "prompt": "温和叙事风格，叙事性插画，场景简洁，人物温和。",
+    "suffix": "人物与场景和谐，留白叙事，构图温暖。避免戏剧冲突、强烈情绪、复杂场景。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "温馨故事",
+      "人文叙事",
+      "情感表达",
+      "亲切氛围"
+    ]
+  },
+  "retro-poster": {
+    "name": "复古海报",
+    "description": "限定色板（3-4色），vintage质感",
+    "prompt": "复古海报风格，限定色板（3-4色），网点效果，vintage质感。",
+    "suffix": "对称或中心构图，强烈视觉层次，字体与图形结合，怀旧氛围。避免现代梯度、照片质感、复杂细节。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "怀旧设计",
+      "复古风格",
+      "视觉冲击",
+      "经典美感"
+    ]
+  },
+  "glam-rock-psychedelic": {
+    "name": "华丽摇滚迷幻",
+    "description": "70年代华丽摇滚美学，迷幻色彩爆炸",
+    "prompt": "1970s glam rock psychedelic art, kaleidoscope patterns, prismatic light explosions, metallic shimmer, liquid chrome effects, starburst radiations, cosmic spirals, electric neon against deep space black, geometric fractals, glitter and sequin texture, Art Nouveau curves meeting Op Art illusions, David Bowie Ziggy Stardust era aesthetics, theatrical spotlights, mirror ball reflections.",
+    "suffix": "Dynamic asymmetric composition, explosive energy radiating from center, bold contrasting colors (electric purple, hot pink, acid yellow, metallic silver, deep black), layered transparency effects, motion blur and light trails, vintage screen print texture with modern intensity. NO TEXT, NO WORDS, NO LETTERS. Pure visual ecstasy.",
+    "use_cases": [
+      "摇滚音乐",
+      "迷幻艺术",
+      "70年代复古",
+      "华丽视觉",
+      "音乐视频",
+      "演出海报"
+    ]
+  },
+  "paper-watercolor-cover": {
+    "name": "纸雕水彩封面",
+    "description": "纸雕层次融合水彩晕染，精致工艺、柔和阴影与高级纸张质感",
+    "prompt": "Paper-cut relief fused with refined watercolor washes, layered handmade paper construction, delicate cut edges, subtle dimensional shadows, translucent pigment blooms, tactile premium paper grain, sophisticated editorial craft, calm artistic atmosphere.",
+    "suffix": "Balanced negative space, restrained dimensional depth, soft natural light, elegant material detail, cohesive limited palette, polished contemporary editorial finish. No typography, no text, no letters, no logos, no watermarks.",
+    "use_cases": [
+      "公众号封面",
+      "X封面",
+      "论文解读封面",
+      "知识分享封面"
+    ]
+  },
+  "moebius": {
+    "name": "Moebius 极繁线条",
+    "description": "Jean Giraud大师风格，极致细腻的交叉线条，浪漫忧郁诗意",
+    "prompt": "每一根线条都极其细腻精致，密集的交叉线纹理覆盖所有表面，层次极其丰富的明暗渐变，每个细节都清晰可见，大师级的构图和空间关系，浪漫而深沉的诗意氛围，法式漫画美学的精致表现力。",
+    "suffix": "极致的细节密度，交叉线条形成细腻的纹理和体积感，光影渐变通过线条疏密实现，空间透视准确但充满梦幻感，整体氛围忧郁浪漫但不失精致优雅，大师级手工笔触。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "忧郁主题",
+      "诗意表达",
+      "极致细节",
+      "大师美学",
+      "浪漫氛围",
+      "音乐视频"
+    ]
+  },
+  "photorealistic-collage": {
+    "name": "写实拼贴碎片",
+    "description": "写实摄影碎片化重组，素描笔触穿插，明艳色块点缀，报纸剪贴风",
+    "prompt": "写实摄影质感的主体被切割成不规则碎片重新拼贴，穿插手绘素描笔触线条，局部叠加鲜明艳丽的纯色块（红、黄、蓝），保留写实质感但打破完整性，报纸剪贴美学的碎片化构成。",
+    "suffix": "混合媒介拼贴构图，写实摄影碎片与手绘素描交织，明艳色块（vermilion red, electric yellow, cobalt blue）局部覆盖强调重点，不规则切割边缘，报纸印刷质感，层次丰富的拼贴叠加，既有写实细节又有抽象碎片感，街头艺术与摄影的混搭美学。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "现代拼贴",
+      "碎片化主题",
+      "街头艺术",
+      "混合媒介",
+      "朋克美学",
+      "音乐视频"
+    ]
+  },
+  "fantasy-botanical-masters": {
+    "name": "奇幻工笔重彩大师",
+    "description": "Moebius+鸟山明融合，极繁细腻工笔，明亮鲜艳童话氛围",
+    "prompt": "工笔重彩绘画风格，每一根线条都极其精致入微，纹理细腻到极致，明亮鲜艳的色彩（亮黄、翠绿、粉红、橙色）层次丰富交织，自然野趣与奇幻童话般的浪漫氛围，大师级的构图和细节表现力，画面干净清晰但细节极其丰富，温馨可爱又充满艺术感。",
+    "suffix": "极繁主义的细节密度，Moebius式的精致线条工艺融合鸟山明的明快色彩和可爱造型，每个元素都有独特纹理，色彩明艳但和谐统一，奇幻秘境的浪漫感，大师级的视角和表现力，层次分明的工笔重彩技法，童话般温馨又不失艺术深度，视觉冲击力强。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "奇幻主题",
+      "细腻插画",
+      "童话氛围",
+      "温馨浪漫",
+      "极致细节",
+      "大师美学"
+    ]
+  },
+  "paper-collage-lifestyle": {
+    "name": "纸艺拼贴生活美学",
+    "description": "艺术插画杂志封面风，不同材质纸张拼贴，清新蓝绿与暖棕色调",
+    "prompt": "纸艺拼贴插画风格，使用不同材质的彩色卡纸、印刷品、旧杂志页面拼贴组合，清新的蓝绿色调与温暖的棕色搭配，前景细节丰富，背景用简化的色块和几何形拼贴，材质肌理清晰可见，层次分明的纸张叠加，悠闲的生活美学氛围。",
+    "suffix": "艺术插画杂志封面级构图，不同纸张材质的拼贴感（光滑卡纸、印刷品纹理、手工剪裁边缘），清新配色（海洋蓝、薄荷绿、暖棕、奶白），前景细节精致呈现，背景简化但层次清晰，纸张边缘自然、叠加阴影分明，手工制作的温暖质感，悠闲度假般的生活美学，既精致又放松的视觉氛围。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "生活美学",
+      "杂志封面",
+      "度假氛围",
+      "手工艺术",
+      "温馨悠闲",
+      "纸艺拼贴"
+    ]
+  },
+  "minimalist-dreamy-blur": {
+    "name": "极简朦胧梦幻",
+    "description": "虚实结合，模糊颗粒肌理，冷暖对比，动态模糊，高级氛围感",
+    "prompt": "极简插画风格，单一纯色背景，主体形态隐约朦胧，模糊的泛红颗粒肌理覆盖画面，虚实结合的梦幻感，清新淡雅的治愈配色，色彩冷暖对比强烈（冷色背景配暖色主体光晕），微光从主体散发，动态模糊效果，非传统构图角度。",
+    "suffix": "高级的艺术氛围感，模糊感+颗粒感+肌理感+朦胧感多重叠加，虚实结合的梦幻温暖氛围，主体轮廓隐约可见但充满诗意，动态模糊传递流动感，非对称构图，色彩层次丰富但统一（冷蓝+暖橙、薄荷+粉红等对比），泛红颗粒质感如老电影胶片，微光营造希望感，整体朦胧治愈，既清新又温暖，高级艺术插画质感。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "梦幻主题",
+      "治愈氛围",
+      "诗意表达",
+      "情绪化艺术",
+      "高级插画",
+      "音乐视频"
+    ]
+  },
+  "matisse-fauvism": {
+    "name": "Matisse 野兽派色彩",
+    "description": "浓烈色块组合，红黄为主调，光影通过色彩交织表现，强烈视觉冲击",
+    "prompt": "Matisse野兽派风格绘画，充满活力的纯色色块组合，浓烈鲜艳的红色、黄色、绿色、蓝色大胆碰撞，形态简化但富有表现力，色彩本身传递光影和情绪，平面化处理但层次丰富，强调形状和色彩的和谐组合，艺术性装饰感。",
+    "suffix": "野兽派大师级色彩构图，浓烈饱和的纯色块（朱红、柠檬黄、翠绿、钴蓝）大胆并置，色彩边界清晰锐利，形态简化为几何化轮廓，光影效果通过色彩深浅和冷暖对比实现而非明暗渐变，平面装饰性强但不失空间感，强烈的视觉冲击力，色彩即是主题，注重形状与色块的平衡，Matisse式的优雅与激情并存。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "色彩主题",
+      "艺术表现",
+      "视觉冲击",
+      "装饰性强",
+      "大师风格",
+      "情绪激烈"
+    ]
+  },
+  "frosted-glass-tech": {
+    "name": "磨砂玻璃科技风",
+    "description": "透明磨砂材质，红橙炫彩渐变，C4D数字艺术，极简科技美学",
+    "prompt": "矢量风格数字插画，透明磨砂玻璃材质（frosted glass translucent effect），红橙色炫彩渐变光影（red-orange iridescent gradient），C4D高级渲染质感，极简构图留白与层次，现代科技感造型，数字艺术（digital art）精致表现，光线通透柔和。",
+    "suffix": "浅色干净背景（light clean background），画面纯净简洁，极致的透明光线效果（premium lighting），磨砂玻璃质感细腻，红橙渐变流动自然，C4D级别的材质渲染，8k超高清细节，留白与层次分明，线条简洁现代，数字艺术的精准与优雅，光影柔和通透，整体氛围高级而宁静。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "科技产品",
+      "现代设计",
+      "建筑视觉",
+      "高端品牌",
+      "数字艺术",
+      "城市美学"
+    ]
+  },
+  "halftone-rock-poster": {
+    "name": "半调网点摇滚海报",
+    "description": "渐变网点半调插画，剪影高对比，边缘光，放射背景",
+    "prompt": "半调渐变网点数字插画（halftone gradient dots digital illustration），通过渐变网点密度表现体积、明暗、高光和质感，剪影式轮廓（silhouette），边缘光勾勒（rim light edge），极简主义构图但艺术气质强烈，动态特写视角，色彩饱满浓烈。",
+    "suffix": "爆炸放射状渐变网点深色背景（radial burst gradient halftone dots on dark background），高对比度色彩（高饱和度纯色与深色对比），网点从细密到粗大形成渐变过渡，剪影边缘清晰锐利，边缘光勾勒出立体感，摇滚海报美学，波普艺术（Pop Art）风格，丝网印刷质感，意境强烈充满张力，动态构图爆发力十足。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "摇滚音乐",
+      "演出海报",
+      "高对比风格",
+      "波普艺术",
+      "动态视觉",
+      "剪影设计"
+    ]
+  },
+  "mondo-screenprint": {
+    "name": "Mondo 丝网海报",
+    "description": "有限色板、平面色块、半调网点、复古电影海报构图",
+    "prompt": "Mondo alternative poster aesthetic, silkscreen print design, limited edition poster art, flat graphic color blocks, strong symbolic reinterpretation rather than literal scene, bold simplified shapes, iconic single focal point, vintage mid-century poster language.",
+    "suffix": "Use a limited 2-5 color palette with explicit high contrast, halftone dot texture, risograph or screen print grain, slight ink misregistration, clean geometric composition, strong negative space, poster-like visual hierarchy, no photorealism, no glossy gradients, no clutter. No text, no words, no letters, no logos, no watermarks.",
+    "use_cases": [
+      "海报设计",
+      "电影海报",
+      "活动海报",
+      "公众号封面",
+      "X封面",
+      "小红书封面",
+      "概念视觉",
+      "复古设计"
+    ]
+  },
+  "negative-space-poster": {
+    "name": "负空间概念海报",
+    "description": "Olly Moss 式图底反转，单一焦点，隐藏意象与大量留白",
+    "prompt": "Minimal conceptual poster design, clever figure-ground inversion, negative space storytelling, one iconic symbol carries the whole idea, ultra-clean silhouette language, restrained graphic abstraction, high-concept visual metaphor.",
+    "suffix": "One central focal element only, vast empty space, hidden secondary image formed by blank areas, 2-3 color screen print palette, crisp silhouette edges, strong thumbnail readability, sophisticated quiet tension, no facial details unless necessary, no decorative clutter. No text, no words, no letters, no logos, no watermarks.",
+    "use_cases": [
+      "高级封面",
+      "概念海报",
+      "电影感海报",
+      "书籍封面",
+      "专辑封面",
+      "悬疑主题",
+      "极简视觉",
+      "留白构图"
+    ]
+  },
+  "literary-mondo-cover": {
+    "name": "文学 Mondo 书封",
+    "description": "克制文学封面，单一象征物，纸张颗粒，强缩略图识别度",
+    "prompt": "Literary book cover design with Mondo screen print influence, sophisticated minimal symbolism, restrained editorial composition, one memorable object or spatial metaphor, vintage paperback cover sensibility, refined graphic restraint.",
+    "suffix": "Muted 2-4 color palette such as cream, charcoal, rust, sage, burgundy, or aged gold; paper grain, screen print texture, clean vertical hierarchy, strong shelf presence and thumbnail readability, conceptual rather than literal, elegant negative space. No text, no title, no author name, no letters, no logos, no watermarks.",
+    "use_cases": [
+      "书籍封面",
+      "读书笔记",
+      "文学主题",
+      "电子书封面",
+      "播客封面",
+      "知识封面",
+      "克制设计"
+    ]
+  },
+  "album-mondo-cover": {
+    "name": "Mondo 专辑封面",
+    "description": "1:1 音乐封面，情绪符号、复古印刷、强记忆点",
+    "prompt": "Square album cover design with Mondo-inspired screen print aesthetics, symbolic music mood distilled into one iconic image, bold graphic silhouette or object, alternative record sleeve design, emotional visual metaphor, vintage print craft.",
+    "suffix": "Square 1:1 composition, strong center or geometric framing, limited 2-5 color palette, halftone texture, paper grain, subtle ink misalignment, clear visual hook at small size, cinematic but not literal, no typography unless explicitly requested. No text, no words, no letters, no logos, no watermarks.",
+    "use_cases": [
+      "专辑封面",
+      "音乐封面",
+      "歌曲封面",
+      "歌单封面",
+      "Suno封面",
+      "播客封面",
+      "音乐视觉",
+      "复古唱片"
+    ]
+  },
+  "ethereal-ink-fantasy": {
+    "name": "空灵水墨奇幻",
+    "description": "蓝白水墨晕染，云雾飘渺半透明，东方奇幻意境，空气透视",
+    "prompt": "东方水墨意境数字绘画，蓝白色调为主（天蓝、白色、浅蓝渐变），高明度低饱和度有限色板，水墨晕染质感，云雾飘渺半透明叠加效果，流畅曲线与飘逸线条，细腻细节刻画与大块留白结合，奇幻美学氛围，数字绘画精细度。",
+    "suffix": "中心放射构图，上下呼应对称感，大量留白营造空灵感，柔和自然光处理，逆光轮廓效果，空气透视层次分明，水墨烟雾般的边缘柔化处理，半透明材质叠加，东方奇幻意境，数字绘画的精细度与水墨写意结合，清新空灵高级感，仙侠美学气质。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "东方奇幻",
+      "仙侠主题",
+      "水墨意境",
+      "空灵氛围",
+      "中国风",
+      "奇幻插画"
+    ]
+  },
+  "impasto-impressionist": {
+    "name": "厚涂印象派",
+    "description": "厚重油画刀触感，蓝金互补色对比，粗犷笔触，浪漫印象派",
+    "prompt": "厚涂印象派油画风格（impasto impressionist oil painting），厚重的油画刀触感（thick impasto texture），颜料堆叠的立体质感，粗糙纹理可见笔触痕迹，粗犷有力的刀刮效果，色彩饱满浓烈但层次丰富，印象派光影处理，浪漫主义氛围。",
+    "suffix": "蓝色与金黄色互补色强烈对比，暖黄、白色、蓝色为主的有限色板，厚涂法笔触方向性明显，颜料堆叠立体凸起效果，碎片化飘散构图，中心聚焦周围元素飘浮，非写实空间感，超现实组合，柔和温暖光线，色彩本身传递光感而非明暗渐变，后印象派粗犷表现力，浪漫诗意氛围。画面中不要任何文字、数字、标注、符号。",
+    "use_cases": [
+      "浪漫主题",
+      "情感表达",
+      "印象派风格",
+      "油画质感",
+      "温暖氛围",
+      "怀旧情绪"
+    ]
+  },
+  "black-metal": {
+    "name": "黑金属",
+    "description": "哥特暗黑美学，高对比黑白，残暴雕刻质感，冰冷月光氛围",
+    "prompt": "Brutal gothic aesthetic, harsh carved aggressive lines like extreme woodcut, pure black and stark white extreme high contrast, cold blue-gray mist and fog, sharp jagged edges, rough scratched textures, corpse paint makeup aesthetic influence, Norwegian black metal album art style, ominous freezing atmosphere, cold metallic surfaces. NO BOTTOM TEXT BAR.",
+    "suffix": "Gothic darkness rendering only. Stark harsh shadows, cold moonlight quality, freezing blue-gray tones, no soft gradients, no warm colors, no gentle smooth lines. Brutal aggressive marks, razor-sharp edges, rough carved surface texture. Pure black metal aesthetic. NO TEXT, NO WORDS, NO LETTERS anywhere.",
+    "use_cases": [
+      "黑金属音乐",
+      "哥特风格",
+      "暗黑主题",
+      "极端音乐",
+      "音乐MTV",
+      "摇滚海报",
+      "残暴美学",
+      "冷峻氛围"
+    ]
+  }
+}

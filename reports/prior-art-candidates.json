@@ -1,0 +1,1785 @@
+{
+  "ok": true,
+  "complete": true,
+  "researched_at": "2026-10-04",
+  "queries": [
+    "codex image generation mcp",
+    "ai poster design prompt skill",
+    "xiaohongshu cover image generation"
+  ],
+  "metric_semantics": {
+    "skills_sh_installs": "ecosystem install telemetry; not ratings or correctness",
+    "skillsmp_repo_stars": "GitHub repository stars; not installs, ratings, or skill-specific quality",
+    "cross_catalog_score": "not calculated; metrics remain separate"
+  },
+  "query_runs": [
+    {
+      "query": "codex image generation mcp",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 20,
+      "skillsmp_candidates": 10
+    },
+    {
+      "query": "ai poster design prompt skill",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 20,
+      "skillsmp_candidates": 5
+    },
+    {
+      "query": "xiaohongshu cover image generation",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 13,
+      "skillsmp_candidates": 9
+    }
+  ],
+  "candidate_family_count": 75,
+  "candidates": [
+    {
+      "family_key": "anthropics/skills:frontend-design",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "anthropics/skills",
+        "skill_name": "frontend-design",
+        "family_key": "anthropics/skills:frontend-design",
+        "skills_sh_installs": 951600,
+        "skills_sh_installs_display": "951.6K",
+        "skills_sh_url": "https://skills.sh/anthropics/skills/frontend-design"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "heygen-com/hyperframes:media-use",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "heygen-com/hyperframes",
+        "skill_name": "media-use",
+        "family_key": "heygen-com/hyperframes:media-use",
+        "skills_sh_installs": 659400,
+        "skills_sh_installs_display": "659.4K",
+        "skills_sh_url": "https://skills.sh/heygen-com/hyperframes/media-use"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "heygen-com/hyperframes:hyperframes-creative",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "heygen-com/hyperframes",
+        "skill_name": "hyperframes-creative",
+        "family_key": "heygen-com/hyperframes:hyperframes-creative",
+        "skills_sh_installs": 609000,
+        "skills_sh_installs_display": "609K",
+        "skills_sh_url": "https://skills.sh/heygen-com/hyperframes/hyperframes-creative"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:high-end-visual-design",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "high-end-visual-design",
+        "family_key": "leonxlnx/taste-skill:high-end-visual-design",
+        "skills_sh_installs": 407200,
+        "skills_sh_installs_display": "407.2K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/high-end-visual-design"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:redesign-existing-projects",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "redesign-existing-projects",
+        "family_key": "leonxlnx/taste-skill:redesign-existing-projects",
+        "skills_sh_installs": 404300,
+        "skills_sh_installs_display": "404.3K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/redesign-existing-projects"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nextlevelbuilder/ui-ux-pro-max-skill:ui-ux-pro-max",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+        "skill_name": "ui-ux-pro-max",
+        "family_key": "nextlevelbuilder/ui-ux-pro-max-skill:ui-ux-pro-max",
+        "skills_sh_installs": 381900,
+        "skills_sh_installs_display": "381.9K",
+        "skills_sh_url": "https://skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:minimalist-ui",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "minimalist-ui",
+        "family_key": "leonxlnx/taste-skill:minimalist-ui",
+        "skills_sh_installs": 375400,
+        "skills_sh_installs_display": "375.4K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/minimalist-ui"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:gpt-taste",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "gpt-taste",
+        "family_key": "leonxlnx/taste-skill:gpt-taste",
+        "skills_sh_installs": 352100,
+        "skills_sh_installs_display": "352.1K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/gpt-taste"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:industrial-brutalist-ui",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "industrial-brutalist-ui",
+        "family_key": "leonxlnx/taste-skill:industrial-brutalist-ui",
+        "skills_sh_installs": 351400,
+        "skills_sh_installs_display": "351.4K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/industrial-brutalist-ui"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:stitch-design-taste",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "stitch-design-taste",
+        "family_key": "leonxlnx/taste-skill:stitch-design-taste",
+        "skills_sh_installs": 349400,
+        "skills_sh_installs_display": "349.4K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/stitch-design-taste"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "heygen-com/hyperframes:faceless-explainer",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "heygen-com/hyperframes",
+        "skill_name": "faceless-explainer",
+        "family_key": "heygen-com/hyperframes:faceless-explainer",
+        "skills_sh_installs": 343400,
+        "skills_sh_installs_display": "343.4K",
+        "skills_sh_url": "https://skills.sh/heygen-com/hyperframes/faceless-explainer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:brandkit",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "brandkit",
+        "family_key": "leonxlnx/taste-skill:brandkit",
+        "skills_sh_installs": 341600,
+        "skills_sh_installs_display": "341.6K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/brandkit"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:image-to-code",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "image-to-code",
+        "family_key": "leonxlnx/taste-skill:image-to-code",
+        "skills_sh_installs": 338000,
+        "skills_sh_installs_display": "338K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/image-to-code"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:imagegen-frontend-web",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "imagegen-frontend-web",
+        "family_key": "leonxlnx/taste-skill:imagegen-frontend-web",
+        "skills_sh_installs": 334200,
+        "skills_sh_installs_display": "334.2K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/imagegen-frontend-web"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:imagegen-frontend-mobile",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "leonxlnx/taste-skill",
+        "skill_name": "imagegen-frontend-mobile",
+        "family_key": "leonxlnx/taste-skill:imagegen-frontend-mobile",
+        "skills_sh_installs": 328300,
+        "skills_sh_installs_display": "328.3K",
+        "skills_sh_url": "https://skills.sh/leonxlnx/taste-skill/imagegen-frontend-mobile"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "emilkowalski/skills:emil-design-eng",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "emilkowalski/skills",
+        "skill_name": "emil-design-eng",
+        "family_key": "emilkowalski/skills:emil-design-eng",
+        "skills_sh_installs": 319900,
+        "skills_sh_installs_display": "319.9K",
+        "skills_sh_url": "https://skills.sh/emilkowalski/skills/emil-design-eng"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "msw-git/msw-ai-coding-plugins-official:msw-painter",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "msw-git/msw-ai-coding-plugins-official",
+        "skill_name": "msw-painter",
+        "family_key": "msw-git/msw-ai-coding-plugins-official:msw-painter",
+        "skills_sh_installs": 8200,
+        "skills_sh_installs_display": "8.2K",
+        "skills_sh_url": "https://skills.sh/msw-git/msw-ai-coding-plugins-official/msw-painter"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "freestylefly/xiaohongshu-skills:xiaohongshu-cover-generator",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "freestylefly/xiaohongshu-skills",
+        "skill_name": "xiaohongshu-cover-generator",
+        "family_key": "freestylefly/xiaohongshu-skills:xiaohongshu-cover-generator",
+        "skills_sh_installs": 1900,
+        "skills_sh_installs_display": "1.9K",
+        "skills_sh_url": "https://skills.sh/freestylefly/xiaohongshu-skills/xiaohongshu-cover-generator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "scenario-labs/skills:scenario",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "scenario-labs/skills",
+        "skill_name": "scenario",
+        "family_key": "scenario-labs/skills:scenario",
+        "skills_sh_installs": 348,
+        "skills_sh_installs_display": "348",
+        "skills_sh_url": "https://skills.sh/scenario-labs/skills/scenario"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "cclank/xhs-cover-skill:xhs-cover-skill",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "cclank/xhs-cover-skill",
+        "skill_name": "xhs-cover-skill",
+        "family_key": "cclank/xhs-cover-skill:xhs-cover-skill",
+        "skills_sh_installs": 105,
+        "skills_sh_installs_display": "105",
+        "skills_sh_url": "https://skills.sh/cclank/xhs-cover-skill/xhs-cover-skill"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ziguishian/xhs-visual-director-skill:xhs-visual-director",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "ziguishian/xhs-visual-director-skill",
+        "skill_name": "xhs-visual-director",
+        "family_key": "ziguishian/xhs-visual-director-skill:xhs-visual-director",
+        "skills_sh_installs": 102,
+        "skills_sh_installs_display": "102",
+        "skills_sh_url": "https://skills.sh/ziguishian/xhs-visual-director-skill/xhs-visual-director"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "adrianpunk/punk-skill:punk-cover",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "adrianpunk/punk-skill",
+        "skill_name": "punk-cover",
+        "family_key": "adrianpunk/punk-skill:punk-cover",
+        "skills_sh_installs": 99,
+        "skills_sh_installs_display": "99",
+        "skills_sh_url": "https://skills.sh/adrianpunk/punk-skill/punk-cover"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ag2ai/ag2-skills:ag2-use-builtin-tools",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "ag2ai/ag2-skills",
+        "skill_name": "ag2-use-builtin-tools",
+        "family_key": "ag2ai/ag2-skills:ag2-use-builtin-tools",
+        "skills_sh_installs": 59,
+        "skills_sh_installs_display": "59",
+        "skills_sh_url": "https://skills.sh/ag2ai/ag2-skills/ag2-use-builtin-tools"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "atian-create/lingzao-skill:lingzao",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "atian-create/lingzao-skill",
+        "skill_name": "lingzao",
+        "family_key": "atian-create/lingzao-skill:lingzao",
+        "skills_sh_installs": 40,
+        "skills_sh_installs_display": "40",
+        "skills_sh_url": "https://skills.sh/atian-create/lingzao-skill/lingzao"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "kangarooking/design-image-studio:design-image-studio",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "kangarooking/design-image-studio",
+        "skill_name": "design-image-studio",
+        "family_key": "kangarooking/design-image-studio:design-image-studio",
+        "skills_sh_installs": 36,
+        "skills_sh_installs_display": "36",
+        "skills_sh_url": "https://skills.sh/kangarooking/design-image-studio/design-image-studio"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "vladmdgolam/agent-skills:figma-context-mcp",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "vladmdgolam/agent-skills",
+        "skill_name": "figma-context-mcp",
+        "family_key": "vladmdgolam/agent-skills:figma-context-mcp",
+        "skills_sh_installs": 35,
+        "skills_sh_installs_display": "35",
+        "skills_sh_url": "https://skills.sh/vladmdgolam/agent-skills/figma-context-mcp"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "wu529778790/shenzjd-skills:video-cover-packager",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "wu529778790/shenzjd-skills",
+        "skill_name": "video-cover-packager",
+        "family_key": "wu529778790/shenzjd-skills:video-cover-packager",
+        "skills_sh_installs": 34,
+        "skills_sh_installs_display": "34",
+        "skills_sh_url": "https://skills.sh/wu529778790/shenzjd-skills/video-cover-packager"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "aws-samples/sample-apex-skills:eks-best-practices",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "aws-samples/sample-apex-skills",
+        "skill_name": "eks-best-practices",
+        "family_key": "aws-samples/sample-apex-skills:eks-best-practices",
+        "skills_sh_installs": 16,
+        "skills_sh_installs_display": "16",
+        "skills_sh_url": "https://skills.sh/aws-samples/sample-apex-skills/eks-best-practices"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "inference-sh/skills:ai-image-generation",
+      "queries": [
+        "ai poster design prompt skill",
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "inference-sh/skills",
+        "skill_name": "ai-image-generation",
+        "family_key": "inference-sh/skills:ai-image-generation",
+        "skills_sh_installs": 14,
+        "skills_sh_installs_display": "14",
+        "skills_sh_url": "https://skills.sh/inference-sh/skills/ai-image-generation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "inference-sh/skills:ai-video-generation",
+      "queries": [
+        "ai poster design prompt skill",
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "inference-sh/skills",
+        "skill_name": "ai-video-generation",
+        "family_key": "inference-sh/skills:ai-video-generation",
+        "skills_sh_installs": 14,
+        "skills_sh_installs_display": "14",
+        "skills_sh_url": "https://skills.sh/inference-sh/skills/ai-video-generation"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "poyoapi/poyo-devtools:poyo-ai-models",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "poyoapi/poyo-devtools",
+        "skill_name": "poyo-ai-models",
+        "family_key": "poyoapi/poyo-devtools:poyo-ai-models",
+        "skills_sh_installs": 13,
+        "skills_sh_installs_display": "13",
+        "skills_sh_url": "https://skills.sh/poyoapi/poyo-devtools/poyo-ai-models"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ponyodong2026/ponyo-cover-anchor-system:cover-anchor-system",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "ponyodong2026/ponyo-cover-anchor-system",
+        "skill_name": "cover-anchor-system",
+        "family_key": "ponyodong2026/ponyo-cover-anchor-system:cover-anchor-system",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/ponyodong2026/ponyo-cover-anchor-system/cover-anchor-system"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "tangyang/skills:article-to-cover",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "ai poster design prompt skill",
+        "owner_repo": "tangyang/skills",
+        "skill_name": "article-to-cover",
+        "family_key": "tangyang/skills:article-to-cover",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/tangyang/skills/article-to-cover"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "orshot-hq/orshot-agent-skills:orshot",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "orshot-hq/orshot-agent-skills",
+        "skill_name": "orshot",
+        "family_key": "orshot-hq/orshot-agent-skills:orshot",
+        "skills_sh_installs": 11,
+        "skills_sh_installs_display": "11",
+        "skills_sh_url": "https://skills.sh/orshot-hq/orshot-agent-skills/orshot"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "tusharkrbarman/skills-for-open-code:fal-ai-media",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "tusharkrbarman/skills-for-open-code",
+        "skill_name": "fal-ai-media",
+        "family_key": "tusharkrbarman/skills-for-open-code:fal-ai-media",
+        "skills_sh_installs": 11,
+        "skills_sh_installs_display": "11",
+        "skills_sh_url": "https://skills.sh/tusharkrbarman/skills-for-open-code/fal-ai-media"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "angelmic/everything-claude-code-ios:fal-ai-media",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "angelmic/everything-claude-code-ios",
+        "skill_name": "fal-ai-media",
+        "family_key": "angelmic/everything-claude-code-ios:fal-ai-media",
+        "skills_sh_installs": 7,
+        "skills_sh_installs_display": "7",
+        "skills_sh_url": "https://skills.sh/angelmic/everything-claude-code-ios/fal-ai-media"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openlark/skills:social-media-cover-generator",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "openlark/skills",
+        "skill_name": "social-media-cover-generator",
+        "family_key": "openlark/skills:social-media-cover-generator",
+        "skills_sh_installs": 7,
+        "skills_sh_installs_display": "7",
+        "skills_sh_url": "https://skills.sh/openlark/skills/social-media-cover-generator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bestlemoon/codex-seo:seo-image-gen",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "bestlemoon/codex-seo",
+        "skill_name": "seo-image-gen",
+        "family_key": "bestlemoon/codex-seo:seo-image-gen",
+        "skills_sh_installs": 5,
+        "skills_sh_installs_display": "5",
+        "skills_sh_url": "https://skills.sh/bestlemoon/codex-seo/seo-image-gen"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mythkiven/rednote-director-skill:rednote-director-skill",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "mythkiven/rednote-director-skill",
+        "skill_name": "rednote-director-skill",
+        "family_key": "mythkiven/rednote-director-skill:rednote-director-skill",
+        "skills_sh_installs": 5,
+        "skills_sh_installs_display": "5",
+        "skills_sh_url": "https://skills.sh/mythkiven/rednote-director-skill/rednote-director-skill"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "solgers/soldy-mcp:soldy-mcp-setup",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "solgers/soldy-mcp",
+        "skill_name": "soldy-mcp-setup",
+        "family_key": "solgers/soldy-mcp:soldy-mcp-setup",
+        "skills_sh_installs": 5,
+        "skills_sh_installs_display": "5",
+        "skills_sh_url": "https://skills.sh/solgers/soldy-mcp/soldy-mcp-setup"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "devkindhq/ideogram-ai-toolkit:marketing-ui-mockup-hero-generator",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "devkindhq/ideogram-ai-toolkit",
+        "skill_name": "marketing-ui-mockup-hero-generator",
+        "family_key": "devkindhq/ideogram-ai-toolkit:marketing-ui-mockup-hero-generator",
+        "skills_sh_installs": 4,
+        "skills_sh_installs_display": "4",
+        "skills_sh_url": "https://skills.sh/devkindhq/ideogram-ai-toolkit/marketing-ui-mockup-hero-generator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "quinteroac/hyperframes:sprite-video",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "quinteroac/hyperframes",
+        "skill_name": "sprite-video",
+        "family_key": "quinteroac/hyperframes:sprite-video",
+        "skills_sh_installs": 4,
+        "skills_sh_installs_display": "4",
+        "skills_sh_url": "https://skills.sh/quinteroac/hyperframes/sprite-video"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "sehoon787/my-codex:fal-ai-media",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "sehoon787/my-codex",
+        "skill_name": "fal-ai-media",
+        "family_key": "sehoon787/my-codex:fal-ai-media",
+        "skills_sh_installs": 4,
+        "skills_sh_installs_display": "4",
+        "skills_sh_url": "https://skills.sh/sehoon787/my-codex/fal-ai-media"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ewingyangs/social-media-cover:social-media-cover",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "ewingyangs/social-media-cover",
+        "skill_name": "social-media-cover",
+        "family_key": "ewingyangs/social-media-cover:social-media-cover",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/ewingyangs/social-media-cover/social-media-cover"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mit-network/everything-claude-code:fal-ai-media",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "mit-network/everything-claude-code",
+        "skill_name": "fal-ai-media",
+        "family_key": "mit-network/everything-claude-code:fal-ai-media",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/mit-network/everything-claude-code/fal-ai-media"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mylesmcook/mcook-skills:quiver-ai",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "mylesmcook/mcook-skills",
+        "skill_name": "quiver-ai",
+        "family_key": "mylesmcook/mcook-skills:quiver-ai",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/mylesmcook/mcook-skills/quiver-ai"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "quiverai/codex-plugin:quiverai",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "quiverai/codex-plugin",
+        "skill_name": "quiverai",
+        "family_key": "quiverai/codex-plugin:quiverai",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/quiverai/codex-plugin/quiverai"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "vyntizs-dev/promo-video:promo-video",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "vyntizs-dev/promo-video",
+        "skill_name": "promo-video",
+        "family_key": "vyntizs-dev/promo-video:promo-video",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/vyntizs-dev/promo-video/promo-video"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "materialofair/oh-my-codex:fal-ai-media",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "codex image generation mcp",
+        "owner_repo": "materialofair/oh-my-codex",
+        "skill_name": "fal-ai-media",
+        "family_key": "materialofair/oh-my-codex:fal-ai-media",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/materialofair/oh-my-codex/fal-ai-media"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mebusw/ins-style-img-bulk-gen:ins-style-img-bulk-gen",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "mebusw/ins-style-img-bulk-gen",
+        "skill_name": "ins-style-img-bulk-gen",
+        "family_key": "mebusw/ins-style-img-bulk-gen:ins-style-img-bulk-gen",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/mebusw/ins-style-img-bulk-gen/ins-style-img-bulk-gen"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nimachu/xhs-imagen:xhs-imagen",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "xiaohongshu cover image generation",
+        "owner_repo": "nimachu/xhs-imagen",
+        "skill_name": "xhs-imagen",
+        "family_key": "nimachu/xhs-imagen:xhs-imagen",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/nimachu/xhs-imagen/xhs-imagen"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:acp-router",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "acp-router",
+        "author": "openclaw",
+        "description": "Route plain-language requests for Claude Code, Cursor, Copilot, OpenClaw ACP, OpenCode, Gemini CLI, Qwen, Kiro, Kimi, iFlow, Factory Droid, Kilocode, or explicit ACP harness work into either OpenClaw ACP runtime sessions or direct acpx-driven sessions (\"telephone game\" flow). For coding-agent thread requests, read this skill first, then use only `sessions_spawn` for thread creation. Codex chat binding defaults to the native Codex app-server plugin unless ACP is explicit or background spawn needs ACP.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/extensions/acpx/skills/acp-router",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/extensions-acpx-skills-acp-router",
+        "repo_stars": 390831,
+        "catalog_updated_at": "2026-08-29T09:07:05+00:00",
+        "source_key": "openclaw/openclaw:extensions/acpx/skills/acp-router",
+        "family_key": "openclaw/openclaw:acp-router",
+        "aliases": [],
+        "query": "codex image generation mcp"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:autoreview",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "autoreview",
+        "author": "openclaw",
+        "description": "Structured Codex, Claude, Amp, Pi, or Kimi code review when explicitly requested.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/autoreview",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-autoreview",
+        "repo_stars": 390831,
+        "catalog_updated_at": "2026-09-02T12:10:39+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/autoreview",
+        "family_key": "openclaw/openclaw:autoreview",
+        "aliases": [],
+        "query": "codex image generation mcp"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:coding-agent",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "coding-agent",
+        "author": "openclaw",
+        "description": "Delegate coding work to Codex, Claude Code, or OpenCode as background workers; not simple edits or read-only code lookup.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/coding-agent",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/skills-coding-agent",
+        "repo_stars": 390831,
+        "catalog_updated_at": "2026-07-29T05:43:42+00:00",
+        "source_key": "openclaw/openclaw:skills/coding-agent",
+        "family_key": "openclaw/openclaw:coding-agent",
+        "aliases": [],
+        "query": "codex image generation mcp"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:deslop",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "deslop",
+        "author": "openclaw",
+        "description": "Diff-scoped AI-slop cleanup pass: strip comment slop, defensive-check slop, type-laundering, and style drift from the current branch diff before autoreview.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/deslop",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-deslop",
+        "repo_stars": 390831,
+        "catalog_updated_at": "2026-08-16T05:03:48+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/deslop",
+        "family_key": "openclaw/openclaw:deslop",
+        "aliases": [],
+        "query": "ai poster design prompt skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:model-usage",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "model-usage",
+        "author": "openclaw",
+        "description": "Summarize CodexBar local cost logs by model for Codex or Claude, including current or full breakdowns.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/model-usage",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/skills-model-usage",
+        "repo_stars": 390831,
+        "catalog_updated_at": "2026-07-21T18:04:46+00:00",
+        "source_key": "openclaw/openclaw:skills/model-usage",
+        "family_key": "openclaw/openclaw:model-usage",
+        "aliases": [],
+        "query": "codex image generation mcp"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:node-connect",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "node-connect",
+        "author": "openclaw",
+        "description": "Diagnose OpenClaw Control UI browser and native Android, iOS, or macOS node connection failures across route, auth, pairing, QR/setup-code, and reconnect states.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/node-connect",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/skills-node-connect",
+        "repo_stars": 390831,
+        "catalog_updated_at": "2026-08-14T18:17:33+00:00",
+        "source_key": "openclaw/openclaw:skills/node-connect",
+        "family_key": "openclaw/openclaw:node-connect",
+        "aliases": [],
+        "query": "codex image generation mcp"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:openclaw-debugging",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "openclaw-debugging",
+        "author": "openclaw",
+        "description": "Debug OpenClaw model, provider, tool-surface, code-mode, streaming, and live/Crabbox behavior by choosing the right logs, probes, and proof path before changing code, including fetching stored sessions, transcripts, and attachments as evidence.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-debugging",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-openclaw-debugging",
+        "repo_stars": 390831,
+        "catalog_updated_at": "2026-08-16T18:13:47+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/openclaw-debugging",
+        "family_key": "openclaw/openclaw:openclaw-debugging",
+        "aliases": [],
+        "query": "codex image generation mcp"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:update-team-server",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "update-team-server",
+        "author": "openclaw",
+        "description": "Update the operator-configured Team server unattended through its canonical deployment owner; verify serving code, supported migrations, session continuity, and recovery without duplicating the hourly scheduler.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/update-team-server",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-update-team-server",
+        "repo_stars": 390831,
+        "catalog_updated_at": "2026-08-28T17:56:04+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/update-team-server",
+        "family_key": "openclaw/openclaw:update-team-server",
+        "aliases": [],
+        "query": "codex image generation mcp"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "obra/superpowers:receiving-code-review",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "receiving-code-review",
+        "author": "obra",
+        "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+        "content_language": "en",
+        "github_url": "https://github.com/obra/superpowers/tree/main/skills/receiving-code-review",
+        "skillsmp_url": "https://skillsmp.com/creators/obra/superpowers/skills-receiving-code-review",
+        "repo_stars": 292664,
+        "catalog_updated_at": "2026-07-24T00:27:16+00:00",
+        "source_key": "obra/superpowers:skills/receiving-code-review",
+        "family_key": "obra/superpowers:receiving-code-review",
+        "aliases": [],
+        "query": "codex image generation mcp"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "obra/superpowers:requesting-code-review",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "requesting-code-review",
+        "author": "obra",
+        "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+        "content_language": "en",
+        "github_url": "https://github.com/obra/superpowers/tree/main/skills/requesting-code-review",
+        "skillsmp_url": "https://skillsmp.com/creators/obra/superpowers/skills-requesting-code-review",
+        "repo_stars": 292664,
+        "catalog_updated_at": "2026-09-19T00:31:35+00:00",
+        "source_key": "obra/superpowers:skills/requesting-code-review",
+        "family_key": "obra/superpowers:requesting-code-review",
+        "aliases": [],
+        "query": "codex image generation mcp"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "obra/superpowers:test-driven-development",
+      "queries": [
+        "codex image generation mcp"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "test-driven-development",
+        "author": "obra",
+        "description": "Use when implementing any feature or bugfix, before writing implementation code",
+        "content_language": "en",
+        "github_url": "https://github.com/obra/superpowers/tree/main/skills/test-driven-development",
+        "skillsmp_url": "https://skillsmp.com/creators/obra/superpowers/skills-test-driven-development",
+        "repo_stars": 292664,
+        "catalog_updated_at": "2026-09-19T00:31:35+00:00",
+        "source_key": "obra/superpowers:skills/test-driven-development",
+        "family_key": "obra/superpowers:test-driven-development",
+        "aliases": [],
+        "query": "codex image generation mcp"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mattpocock/skills:codebase-design",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "codebase-design",
+        "author": "mattpocock",
+        "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+        "content_language": "en",
+        "github_url": "https://github.com/mattpocock/skills/tree/main/skills/engineering/codebase-design",
+        "skillsmp_url": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-codebase-design",
+        "repo_stars": 271657,
+        "catalog_updated_at": "2026-08-19T10:03:37+00:00",
+        "source_key": "mattpocock/skills:skills/engineering/codebase-design",
+        "family_key": "mattpocock/skills:codebase-design",
+        "aliases": [],
+        "query": "ai poster design prompt skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:ai-first-engineering",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "ai-first-engineering",
+        "author": "affaan-m",
+        "description": "Engineering operating model for teams where AI agents generate a large share of implementation output. Use when setting team process, review gates, or ownership rules for a codebase largely written by agents.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/ai-first-engineering",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-ai-first-engineering",
+        "repo_stars": 269367,
+        "catalog_updated_at": "2026-08-12T03:58:14+00:00",
+        "source_key": "affaan-m/ecc:skills/ai-first-engineering",
+        "family_key": "affaan-m/ecc:ai-first-engineering",
+        "aliases": [
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/ai-first-engineering"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/ai-first-engineering"
+          },
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/ai-first-engineering"
+          }
+        ],
+        "query": "ai poster design prompt skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:ai-regression-testing",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "ai-regression-testing",
+        "author": "affaan-m",
+        "description": "Regression testing strategies for AI-assisted development. Sandbox-mode API testing without database dependencies, automated bug-check workflows, and patterns to catch AI blind spots where the same model writes and reviews code. Use when adding regression coverage to AI-assisted code, or when the same model both wrote and reviewed a change.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/ai-regression-testing",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-ai-regression-testing",
+        "repo_stars": 269367,
+        "catalog_updated_at": "2026-08-12T03:58:14+00:00",
+        "source_key": "affaan-m/ecc:skills/ai-regression-testing",
+        "family_key": "affaan-m/ecc:ai-regression-testing",
+        "aliases": [
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/ai-regression-testing"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/ai-regression-testing"
+          },
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/ai-regression-testing"
+          }
+        ],
+        "query": "ai poster design prompt skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:fal-ai-media",
+      "queries": [
+        "ai poster design prompt skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "fal-ai-media",
+        "author": "affaan-m",
+        "description": "Unified media generation via fal.ai MCP — image, video, and audio. Covers text-to-image (Nano Banana), text/image-to-video (Seedance, Kling, Veo 3), text-to-speech (CSM-1B), and video-to-audio (ThinkSound). Use when the user wants to generate images, videos, or audio with AI.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/fal-ai-media",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/agents-skills-fal-ai-media",
+        "repo_stars": 269367,
+        "catalog_updated_at": "2026-09-18T22:51:01+00:00",
+        "source_key": "affaan-m/ecc:.agents/skills/fal-ai-media",
+        "family_key": "affaan-m/ecc:fal-ai-media",
+        "aliases": [
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/fal-ai-media"
+          },
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/fal-ai-media"
+          }
+        ],
+        "query": "ai poster design prompt skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/open-design:card-xiaohongshu",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "card-xiaohongshu",
+        "author": "nexu-io",
+        "description": "Xiaohongshu-style knowledge cards, arranged as a swipeable multi-card carousel.",
+        "content_language": "zh",
+        "github_url": "https://github.com/nexu-io/open-design/tree/main/skills/card-xiaohongshu",
+        "skillsmp_url": "https://skillsmp.com/creators/nexu-io/open-design/skills-card-xiaohongshu",
+        "repo_stars": 98525,
+        "catalog_updated_at": "2026-05-22T08:39:32+00:00",
+        "source_key": "nexu-io/open-design:skills/card-xiaohongshu",
+        "family_key": "nexu-io/open-design:card-xiaohongshu",
+        "aliases": [
+          {
+            "language": "zh",
+            "github_url": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/examples/card-xiaohongshu"
+          }
+        ],
+        "query": "xiaohongshu cover image generation"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "panniantong/agent-reach:agent-reach",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "agent-reach",
+        "author": "Panniantong",
+        "description": "MUST USE when user wants to 调研/research/搜索/search/查/找/look up anything on the internet — e.g. 全网调研 X / 帮我调研一下 X / 查一下 X / 搜搜 X / 看看大家怎么评价 X / X 上有什么讨论 / research this topic。\nAlso MUST USE when user mentions any platform or shares any URL/链接: 小红书/xiaohongshu/xhs, Twitter/推特/X, B站/bilibili, Reddit, Facebook, Instagram, V2EX, LinkedIn/领英/Boss直聘/招聘/求职/jobs, YouTube, GitHub code search, 小宇宙播客, 雪球/股票行情, RSS feeds, or any web URL.\n16 platforms, multi-backend routing (OpenCLI / per-platform CLIs / APIs). Zero config for 6 channels. Run `agent-reach doctor --json` to see which backend serves each platform right now.\nNOT for: 写报告/数据分析/翻译等内容加工（本 skill 只负责从互联网获取内容）； 发帖/评论/点赞等写操作；已有专门 skill 的平台（先用专门 skill）。\n【路由方式】SKILL.md 包含路由表和常用命令，复杂场景需按需阅读对应分类的 references/*.md。 分类：search / social (小红书/推特/B站/V2EX/Reddit/Facebook/Instagram) / career(LinkedIn/Boss直聘) / dev(github) / web(网页/文章/RSS) / video(YouTube/B站/播客) / finance(雪球/股票)。",
+        "content_language": "zh",
+        "github_url": "https://github.com/Panniantong/Agent-Reach/tree/main/agent_reach/skill",
+        "skillsmp_url": "https://skillsmp.com/creators/panniantong/agent-reach/agent-reach-skill",
+        "repo_stars": 86100,
+        "catalog_updated_at": "2026-09-15T16:16:24+00:00",
+        "source_key": "panniantong/agent-reach:agent_reach/skill",
+        "family_key": "panniantong/agent-reach:agent-reach",
+        "aliases": [],
+        "query": "xiaohongshu cover image generation"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yikart/aitoearn:crawling-social-media",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "crawling-social-media",
+        "author": "yikart",
+        "description": "Downloads and extracts content from social media platforms. Use when user wants to crawl, download, or extract videos/content from Bilibili, YouTube, TikTok, Douyin, Instagram, Twitter, Xiaohongshu. 下载视频、抓取视频、爬取内容、提取视频、下载B站视频、下载抖音视频、下载YouTube视频、视频采集。",
+        "content_language": "en",
+        "github_url": "https://github.com/yikart/AiToEarn/tree/main/project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/crawling-social-media",
+        "skillsmp_url": "https://skillsmp.com/creators/yikart/aitoearn/project-aitoearn-backend-apps-aitoearn-ai-src-core-agent-skills-crawling-social-media",
+        "repo_stars": 26482,
+        "catalog_updated_at": "2026-03-17T09:16:39+00:00",
+        "source_key": "yikart/aitoearn:project/aitoearn-backend/apps/aitoearn-ai/src/core/agent/skills/crawling-social-media",
+        "family_key": "yikart/aitoearn:crawling-social-media",
+        "aliases": [],
+        "query": "xiaohongshu cover image generation"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "dreammis/social-auto-upload:xiaohongshu-upload",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "xiaohongshu-upload",
+        "author": "dreammis",
+        "description": "当 agent 需要通过已安装的 `sau` CLI 完成小红书登录、cookie 校验、视频上传或图文发布时使用这个 skill。该 skill 适用于已经安装 `social-auto-upload` 且可调用 `sau` 命令的环境。优先使用这个 skill 进行稳定的命令式小红书工作流，而不是一开始就阅读 uploader 源码。",
+        "content_language": "zh",
+        "github_url": "https://github.com/dreammis/social-auto-upload/tree/main/skills/xiaohongshu-upload",
+        "skillsmp_url": "https://skillsmp.com/creators/dreammis/social-auto-upload/skills-xiaohongshu-upload",
+        "repo_stars": 15211,
+        "catalog_updated_at": "2026-03-25T07:19:40+00:00",
+        "source_key": "dreammis/social-auto-upload:skills/xiaohongshu-upload",
+        "family_key": "dreammis/social-auto-upload:xiaohongshu-upload",
+        "aliases": [],
+        "query": "xiaohongshu cover image generation"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/html-anything:card-xiaohongshu",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "card-xiaohongshu",
+        "author": "nexu-io",
+        "description": "小红书风格知识卡片, 多张联排可滑动浏览",
+        "content_language": "zh",
+        "github_url": "https://github.com/nexu-io/html-anything/tree/main/next/src/lib/templates/skills/card-xiaohongshu",
+        "skillsmp_url": "https://skillsmp.com/creators/nexu-io/html-anything/next-src-lib-templates-skills-card-xiaohongshu",
+        "repo_stars": 8970,
+        "catalog_updated_at": "2026-05-18T12:26:33+00:00",
+        "source_key": "nexu-io/html-anything:next/src/lib/templates/skills/card-xiaohongshu",
+        "family_key": "nexu-io/html-anything:card-xiaohongshu",
+        "aliases": [],
+        "query": "xiaohongshu cover image generation"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "teamwiseflow/xiaobei:xhs-publish",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "xhs-publish",
+        "author": "TeamWiseFlow",
+        "description": "Publish image-text notes and video notes to Xiaohongshu (小红书) via creator COS upload + web_api v2. Supports image posts (up to 18 images), video posts, topics/hashtags.",
+        "content_language": "zh",
+        "github_url": "https://github.com/TeamWiseFlow/xiaobei/tree/master/crews/main/skills/expert-xhs/tools/xhs-publish",
+        "skillsmp_url": "https://skillsmp.com/creators/teamwiseflow/xiaobei/crews-main-skills-expert-xhs-tools-xhs-publish",
+        "repo_stars": 8574,
+        "catalog_updated_at": "2026-09-20T05:55:19+00:00",
+        "source_key": "teamwiseflow/xiaobei:crews/main/skills/expert-xhs/tools/xhs-publish",
+        "family_key": "teamwiseflow/xiaobei:xhs-publish",
+        "aliases": [],
+        "query": "xiaohongshu cover image generation"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "op7418/guizang-social-card-skill:guizang-social-card-skill",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "guizang-social-card-skill",
+        "author": "op7418",
+        "description": "Generate Guizang-style social card image sets, Live Photo motion cards, material-first Live Photo puzzle layouts, triple Live Photo collages, long-video-to-Live-Photo treatments, and WeChat official account cover pairs from articles, scripts, screenshots, product notes, subtitles, photos, or user-supplied videos. Use when the user asks for 小红书图文, Rednote/Xiaohongshu images, social cards, carousel images, 3:4 covers, Live Photo, 实况照片, 单视频实况拼图, 二宫格实况拼图, 三连实况拼图, 四宫格实况拼图, 微信公众号封面, WeChat 21:9 + 1:1 covers, Swiss Style, or magazine-style social images.",
+        "content_language": "en",
+        "github_url": "https://github.com/op7418/guizang-social-card-skill/tree/main",
+        "skillsmp_url": "https://skillsmp.com/creators/op7418/guizang-social-card-skill/skill",
+        "repo_stars": 7296,
+        "catalog_updated_at": "2026-07-01T16:39:11+00:00",
+        "source_key": "op7418/guizang-social-card-skill:tree/main",
+        "family_key": "op7418/guizang-social-card-skill:guizang-social-card-skill",
+        "aliases": [],
+        "query": "xiaohongshu cover image generation"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "anbeime/skill:xiaohongshu-makeup",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "xiaohongshu-makeup",
+        "author": "anbeime",
+        "description": "自媒体创作者与电商运营在推广美妆护肤产品时，当需要创作或优化小红书笔记、生成AI配图提示词时，使用此技能可一键生成高转化爆款笔记、吸睛标题与精准标签，自动产出专业文生图提示词，轻松打造小红书爆款内容。",
+        "content_language": "zh",
+        "github_url": "https://github.com/anbeime/skill/tree/main/skills/xiaohongshu-makeup/xiaohongshu-makeup",
+        "skillsmp_url": "https://skillsmp.com/creators/anbeime/skill/skills-xiaohongshu-makeup-xiaohongshu-makeup",
+        "repo_stars": 7285,
+        "catalog_updated_at": "2026-08-26T02:37:43+00:00",
+        "source_key": "anbeime/skill:skills/xiaohongshu-makeup/xiaohongshu-makeup",
+        "family_key": "anbeime/skill:xiaohongshu-makeup",
+        "aliases": [],
+        "query": "xiaohongshu cover image generation"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "devin-axis/ipollowork:xhs-ops-dispatcher",
+      "queries": [
+        "xiaohongshu cover image generation"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "xhs-ops-dispatcher",
+        "author": "Devin-AXIS",
+        "description": "Dispatch due Xiaohongshu browser jobs to locked account workers.",
+        "content_language": "zh",
+        "github_url": "https://github.com/Devin-AXIS/iPolloWork/tree/main/examples/plugin-packages/xiaohongshu-ops/skills/xhs-ops-dispatcher",
+        "skillsmp_url": "https://skillsmp.com/creators/devin-axis/ipollowork/examples-plugin-packages-xiaohongshu-ops-skills-xhs-ops-dispatcher",
+        "repo_stars": 6828,
+        "catalog_updated_at": "2026-09-11T02:56:15+00:00",
+        "source_key": "devin-axis/ipollowork:examples/plugin-packages/xiaohongshu-ops/skills/xhs-ops-dispatcher",
+        "family_key": "devin-axis/ipollowork:xhs-ops-dispatcher",
+        "aliases": [],
+        "query": "xiaohongshu cover image generation"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    }
+  ],
+  "missing_evidence": [],
+  "next_steps": [
+    "shortlist by job relevance and role coverage, not combined popularity",
+    "open canonical GitHub source and inspect SKILL.md before adoption",
+    "verify license, maintenance, permissions, security, duplication, and rating evidence",
+    "write keep/adapt/reject/invent synthesis before authoring"
+  ]
+}

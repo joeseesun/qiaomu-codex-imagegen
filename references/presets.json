@@ -1,0 +1,93 @@
+{
+ "article": {
+  "name": "文章配图",
+  "aspect_ratio": "16:9",
+  "size": "1920x1080",
+  "style": "minimalist",
+  "notes": "Single clear idea per image, generous margins, readable at article width."
+ },
+ "wechat-cover": {
+  "name": "公众号封面",
+  "aspect_ratio": "2.35:1",
+  "size": "1880x800",
+  "style": "paper-watercolor-cover",
+  "notes": "Ultra-wide cover: keep the focal subject in the central 60% so a square thumbnail crop still works; calm background."
+ },
+ "xiaohongshu": {
+  "name": "小红书配图（竖版）",
+  "aspect_ratio": "3:4",
+  "size": "1080x1440",
+  "style": "airy-illustration",
+  "notes": "Vertical card for a feed: one strong focal point in the upper two thirds, clear visual hierarchy, keep a clean band at the top or bottom for a title added later."
+ },
+ "xiaohongshu-square": {
+  "name": "小红书封面（方形）",
+  "aspect_ratio": "1:1",
+  "size": "1080x1080",
+  "style": "airy-illustration",
+  "notes": "Square cover: centred focal point with even margins."
+ },
+ "x-cover": {
+  "name": "X 封面",
+  "aspect_ratio": "5:2",
+  "size": "1500x600",
+  "style": "paper-watercolor-cover",
+  "notes": "Wide banner; the profile photo covers the lower left, so keep the left-bottom area quiet."
+ },
+ "video-cover": {
+  "name": "视频封面（YouTube / B 站 横版）",
+  "aspect_ratio": "16:9",
+  "size": "1920x1080",
+  "style": "mondo-screenprint",
+  "notes": "Thumbnail logic: one huge readable focal subject, high contrast, simple background, readable when shrunk to 320 px wide. Leave a clear area (left or bottom third) where a title can be laid on later."
+ },
+ "video-vertical": {
+  "name": "竖屏视频封面 / 海报（抖音·视频号·Reels）",
+  "aspect_ratio": "9:16",
+  "size": "1080x1920",
+  "style": "mondo-screenprint",
+  "notes": "Full-screen vertical. Keep important content inside the central safe area: about 12% free at the top and 20% at the bottom for app UI and captions."
+ },
+ "poster": {
+  "name": "海报",
+  "aspect_ratio": "9:16",
+  "size": "1080x1920",
+  "style": "mondo-screenprint",
+  "notes": "Poster hierarchy: one iconic focal element, limited palette, strong negative space."
+ },
+ "movie-poster": {
+  "name": "电影海报",
+  "aspect_ratio": "2:3",
+  "size": "1200x1800",
+  "style": "mondo-screenprint",
+  "notes": "Conceptual reinterpretation, not a literal scene; silhouettes and symbols over faces."
+ },
+ "book-cover": {
+  "name": "书籍封面",
+  "aspect_ratio": "2:3",
+  "size": "1200x1800",
+  "style": "literary-mondo-cover",
+  "notes": "Trade book proportions; leave room for title and author lettering to be added later."
+ },
+ "album-cover": {
+  "name": "专辑封面",
+  "aspect_ratio": "1:1",
+  "size": "1500x1500",
+  "style": "album-mondo-cover",
+  "notes": "Square; must stay striking at 120 px."
+ },
+ "moments": {
+  "name": "朋友圈海报",
+  "aspect_ratio": "4:5",
+  "size": "1080x1350",
+  "style": "mondo-screenprint",
+  "notes": "Shared as a tall card in a feed: a single idea, bold shapes, safe margins."
+ },
+ "paper": {
+  "name": "论文 / 科普配图",
+  "aspect_ratio": "16:9",
+  "size": "1920x1080",
+  "style": "newyorker",
+  "notes": "Explanatory editorial illustration; wit over detail."
+ }
+}

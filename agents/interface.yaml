@@ -1,0 +1,34 @@
+interface:
+  display_name: "Qiaomu Codex ImageGen"
+  short_description: "Generate images with Codex from any agent, with poster, video cover and Xiaohongshu craft built in"
+  default_prompt: "Use $qiaomu-codex-imagegen to generate or edit images through Codex's built-in image generation. Map the request to a scenario preset (Xiaohongshu 3:4, video cover 16:9, vertical cover 9:16, WeChat cover, poster, book or album cover), choose one style from the bundled catalog or Mondo poster artists, write the description as content only, keep the image text-free unless exact short text is required, call the MCP tool generate_image or the bundled CLI, then look at the saved file, verify the pixel size and report absolute paths. Each call spends the user's Codex image quota, so do not run test generations."
+  examples:
+    - "帮我做一张小红书配图，主题是清晨读书"
+    - "给这期视频做一张 16:9 的视频封面，要有设计感"
+    - "用 Mondo 风格做一张《沙丘》的电影海报，三个设计师风格各来一张"
+    - "把这张图的背景换成米色纸张，主体不变"
+    - "用 Codex 画一张公众号头图"
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets: ["claude", "openai", "generic", "agent-skills-compatible"]
+  activation:
+    mode: "manual"
+    paths: []
+  execution:
+    context: "inline"
+    shell: "bash"
+  trust:
+    source_tier: "local"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow catalog metadata and read-only source review; forbid unreviewed execution"
+    generated_public_claims: "evidence-bound"
+  permissions:
+    network: "none directly; the Codex CLI it launches contacts the user's Codex account"
+    file_write: "image output directory only (default ~/Pictures/qiaomu-codex-imagegen)"
+    subprocess: "codex app-server (stdio), sandboxed to the output directory, approval policy never, no network for tools"
+    interactive: "avoid"
+  degradation:
+    claude: "mcp-tool-or-cli"
+    openai: "cli"
+    generic: "cli"
+    agent-skills-compatible: "cli"
