@@ -1,0 +1,86 @@
+{
+ "jules-cheret": {
+  "name": "Jules Cheret",
+  "prompt": "Jules Chéret Belle Époque lithograph poster: bright joyful colours, dynamic feminine figures in motion, flat colour areas with loose crayon texture. No text, letters or logos unless explicitly requested."
+ },
+ "toulouse-lautrec": {
+  "name": "Toulouse Lautrec",
+  "prompt": "Toulouse-Lautrec lithograph poster: flat colour blocks, Japanese-print influence, bold dark silhouettes, sweeping outlines. No text, letters or logos unless explicitly requested."
+ },
+ "alphonse-mucha": {
+  "name": "Alphonse Mucha",
+  "prompt": "Alphonse Mucha Art Nouveau poster: flowing curves, ornate floral halo, decorative border, soft muted jewel palette. No text, letters or logos unless explicitly requested."
+ },
+ "steinlen": {
+  "name": "Steinlen",
+  "prompt": "Théophile Steinlen social-realist poster: expressive ink lines, flat warm colour, cat motif, bohemian street mood. No text, letters or logos unless explicitly requested."
+ },
+ "eugene-grasset": {
+  "name": "Eugene Grasset",
+  "prompt": "Eugène Grasset poster: medieval-Gothic stained-glass outlines, flat colour inside thick contours, ornamental lettering space. No text, letters or logos unless explicitly requested."
+ },
+ "saul-bass": {
+  "name": "Saul Bass",
+  "prompt": "Saul Bass poster: minimalist geometric abstraction, cut-paper shapes, one visual metaphor, flat 2-3 colour palette, hand-cut feel. No text, letters or logos unless explicitly requested."
+ },
+ "cassandre": {
+  "name": "Cassandre",
+  "prompt": "A. M. Cassandre Art Deco poster: Cubist planes, dramatic perspective, airbrushed gradients on geometric forms, monumental simplicity. No text, letters or logos unless explicitly requested."
+ },
+ "milton-glaser": {
+  "name": "Milton Glaser",
+  "prompt": "Milton Glaser psychedelic pop poster: flowing flat-colour shapes, bold outlines, innovative hand-drawn typography space, vibrant palette. No text, letters or logos unless explicitly requested."
+ },
+ "josef-muller-brockmann": {
+  "name": "Josef Muller Brockmann",
+  "prompt": "Josef Müller-Brockmann Swiss-style poster: strict grid, mathematical precision, geometric arcs, sans-serif layout space, restrained colour. No text, letters or logos unless explicitly requested."
+ },
+ "paul-rand": {
+  "name": "Paul Rand",
+  "prompt": "Paul Rand modernist poster: playful geometry, collage-like cut shapes, clever visual pun, bright flat colour. No text, letters or logos unless explicitly requested."
+ },
+ "drew-struzan": {
+  "name": "Drew Struzan",
+  "prompt": "Drew Struzan painted movie-poster style: hand-painted realism, epic cinematic ensemble composition, warm nostalgic glow. No text, letters or logos unless explicitly requested."
+ },
+ "olly-moss": {
+  "name": "Olly Moss",
+  "prompt": "Olly Moss ultra-minimal poster: figure-ground inversion, clever hidden imagery in negative space, only 1-2 flat colours. No text, letters or logos unless explicitly requested."
+ },
+ "tyler-stout": {
+  "name": "Tyler Stout",
+  "prompt": "Tyler Stout maximalist poster: dense character collage, intricate detail, hand-drawn lettering, saturated retro palette. No text, letters or logos unless explicitly requested."
+ },
+ "martin-ansin": {
+  "name": "Martin Ansin",
+  "prompt": "Martin Ansin Art Deco poster: elegant linework, refined vintage muted palette, symmetrical elegance. No text, letters or logos unless explicitly requested."
+ },
+ "laurent-durieux": {
+  "name": "Laurent Durieux",
+  "prompt": "Laurent Durieux poster: clever visual puns, mysterious atmospheric depth, aged-paper tones, soft grain. No text, letters or logos unless explicitly requested."
+ },
+ "kilian-eng": {
+  "name": "Kilian Eng",
+  "prompt": "Kilian Eng poster: geometric futurism, precise technical linework, glowing neon-tinted gradients, vast retro sci-fi landscapes. No text, letters or logos unless explicitly requested."
+ },
+ "dan-mccarthy": {
+  "name": "Dan Mccarthy",
+  "prompt": "Dan McCarthy poster: ultra-flat geometric abstraction, reduced shapes, radiating bands, limited bold palette. No text, letters or logos unless explicitly requested."
+ },
+ "jock": {
+  "name": "Jock",
+  "prompt": "Jock poster: gritty expressive brushwork, dynamic action, ink splatter, high-contrast limited palette. No text, letters or logos unless explicitly requested."
+ },
+ "shepard-fairey": {
+  "name": "Shepard Fairey",
+  "prompt": "Shepard Fairey propaganda poster: halftone, bold stencil-like shapes, red-cream-navy palette, heroic composition. No text, letters or logos unless explicitly requested."
+ },
+ "jay-ryan": {
+  "name": "Jay Ryan",
+  "prompt": "Jay Ryan poster: folksy handmade screen print, warm textured simple shapes, friendly animals, off-register inks. No text, letters or logos unless explicitly requested."
+ },
+ "paula-scher": {
+  "name": "Paula Scher",
+  "prompt": "Paula Scher typographic poster: layered oversized type as image, maximalist rhythm, saturated flat colour. No text, letters or logos unless explicitly requested."
+ }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "qiaomu-codex-imagegen",
+  "version": "0.2.0",
+  "description": "Codex built-in image generation as an MCP server, a CLI and an agent skill, with Qiaomu poster / video cover / Xiaohongshu prompt craft built in.",
+  "type": "module",
+  "license": "MIT",
+  "author": "向阳乔木 <https://x.com/vista8>",
+  "homepage": "https://github.com/joeseesun/qiaomu-codex-imagegen",
+  "repository": { "type": "git", "url": "git+https://github.com/joeseesun/qiaomu-codex-imagegen.git" },
+  "bin": { "qiaomu-codex-imagegen": "scripts/cli.mjs", "qiaomu-codex-imagegen-mcp": "scripts/mcp-server.mjs" },
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test tests/imagegen.test.mjs", "mcp": "node scripts/mcp-server.mjs" },
+  "files": ["SKILL.md", "README.md", "LICENSE", "scripts", "references", "agents"],
+  "keywords": ["mcp", "codex", "image-generation", "agent-skill", "poster", "xiaohongshu"]
+}

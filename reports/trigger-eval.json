@@ -1,0 +1,166 @@
+{
+  "ok": true,
+  "threshold": 0.34,
+  "description_concepts": [
+    "codex",
+    "craft",
+    "image",
+    "scenario"
+  ],
+  "missing_description_concepts": [],
+  "summary": {
+    "total": 11,
+    "passed": 11,
+    "false_positive": 0,
+    "false_negative": 0,
+    "pass_rate": 1.0
+  },
+  "failures": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "用 codex 帮我生成一张小红书配图 风格要 mondo",
+        "family": "xiaohongshu",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "codex",
+          "craft",
+          "image",
+          "scenario"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "给这期视频做一张视频封面 16:9 用 codex 画",
+        "family": "video",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "codex",
+          "image",
+          "scenario"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "Generate a poster with Codex image generation in Mondo style",
+        "family": "poster",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "codex",
+          "craft",
+          "image"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "用 mcp 调用 codex 图片生成 做一个公众号封面 提示词帮我写好",
+        "family": "mcp",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "codex",
+          "craft",
+          "image",
+          "scenario"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "把这个视频海报换成 olly moss 风格 用 codex 重新画",
+        "family": "video",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "codex",
+          "craft",
+          "image",
+          "scenario"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "用 python 画一个折线图 展示销量数据",
+        "family": "chart",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": "折线图"
+      },
+      {
+        "prompt": "帮我写一篇公众号文章",
+        "family": "writing",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "scenario"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "把这段视频剪成 30 秒 加字幕",
+        "family": "video-edit",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "设计一个 App 登录页的 figma 原型",
+        "family": "ui",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": "figma"
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "text to video 生成一段 5 秒的视频 用 codex",
+        "family": "video-generation",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "codex"
+        ],
+        "negative_pattern": "text to video"
+      },
+      {
+        "prompt": "把海报做成数据可视化图表",
+        "family": "chart",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "image"
+        ],
+        "negative_pattern": "图表"
+      }
+    ]
+  }
+}
