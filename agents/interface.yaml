@@ -1,8 +1,9 @@
 interface:
   display_name: "Qiaomu Codex ImageGen"
   short_description: "Generate images with Codex from any agent, with poster, video cover and Xiaohongshu craft built in"
-  default_prompt: "Use $qiaomu-codex-imagegen to generate or edit images through Codex's built-in image generation. Map the request to a scenario preset (Xiaohongshu 3:4, video cover 16:9, vertical cover 9:16, WeChat cover, poster, book or album cover), choose one style from the bundled catalog or Mondo poster artists, write the description as content only, keep the image text-free unless exact short text is required, call the MCP tool generate_image or the bundled CLI, then look at the saved file, verify the pixel size and report absolute paths. Each call spends the user's Codex image quota, so do not run test generations."
+  default_prompt: "Use $qiaomu-codex-imagegen for every image request. First extract topic, deliverable, ratio, text mode (none / exact_short / typeset_later), exact facts and reference roles; ask only blocking questions. Then call suggest_directions and present at least four divergent style directions (different visual mechanisms) with one concrete sentence each, and let the user choose, unless they already fixed a style or said to go ahead. Expand each chosen template with compose_prompt using concrete variables (no invented facts, colours as roles, rewrite structural overrides by hand), call generate_image once per chosen direction, then look at every image and check it against the acceptance checks. Each call spends the user's Codex image quota, so no test generations."
   examples:
+    - "给我几个风格方向，我要做一张咖啡店阅读月的海报"
     - "帮我做一张小红书配图，主题是清晨读书"
     - "给这期视频做一张 16:9 的视频封面，要有设计感"
     - "用 Mondo 风格做一张《沙丘》的电影海报，三个设计师风格各来一张"

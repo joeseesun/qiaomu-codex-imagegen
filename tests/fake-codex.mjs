@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 const PNG = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAAD0lEQVR4nGP4z8DwHwAFAAH/q842iQAAAABJRU5ErkJggg==', 'base64');
 const out = o => process.stdout.write(JSON.stringify(o) + '\n');
+const PNG_ALPHA = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAAEUlEQVR4nGP8z8Dwn5GBgREADQoCAqpDDfkAAAAASUVORK5CYII=', 'base64'); // 2x1 RGBA: one opaque red pixel, one fully transparent
 let n = 0, buffer = '';
 process.stdin.setEncoding('utf8');
 process.stdin.on('data', chunk => {
@@ -16,7 +17,7 @@ process.stdin.on('data', chunk => {
     else if (m.method === 'turn/start') {
       out({ id: m.id, result: { turn: { id: 'u1' } } });
       if (process.env.FAKE_CODEX_MODE === 'noimage') { out({ method: 'item/completed', params: { item: { type: 'agentMessage', text: 'I cannot draw that.' } } }); out({ method: 'turn/completed', params: { turn: { status: 'completed' } } }); return; }
-      const saved = join(tmpdir(), `fake-codex-${process.pid}-${++n}.png`); writeFileSync(saved, PNG);
+      const saved = join(tmpdir(), `fake-codex-${process.pid}-${++n}.png`); writeFileSync(saved, process.env.FAKE_CODEX_MODE === 'alpha' ? PNG_ALPHA : PNG);
       const input = JSON.stringify(m.params.input);
       out({ method: 'item/started', params: { item: { type: 'imageGeneration', id: 'i1' } } });
       out({ method: 'item/completed', params: { item: { type: 'imageGeneration', id: 'i1', status: 'completed', result: '', savedPath: saved, revisedPrompt: 'REVISED:' + input.length } } });
