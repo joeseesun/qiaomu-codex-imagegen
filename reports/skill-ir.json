@@ -3,7 +3,7 @@
   "generated_at": "2026-10-04",
   "package": {
     "name": "qiaomu-codex-imagegen",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "owner": "Qiaomu",
     "maturity_tier": "production",
     "lifecycle_stage": "production",
@@ -11,8 +11,8 @@
     "upstream_sync": {}
   },
   "intent": {
-    "description": "Generate or edit images with Codex's built-in image generation from any agent, through an MCP tool or a plain CLI, with Qiaomu poster / video cover / Xiaohongshu prompt craft built in. Use for 生图, 配图, 海报, 视频海报, 视频封面, 小红书配图, 公众号封面, X 封面, 朋友圈海报, 书籍封面, 专辑封面, Mondo 风格, 图生图 and \"用 Codex 画一张\". Picks the scenario ratio and safe areas, a style from 86 bundled styles (66 general + 20 Mondo poster artists), writes the prompt, calls Codex, and returns the saved file path and pixel size. Excludes: editing photos with local tools, charts or diagrams from data, UI mockups, video generation, or anything that needs an API key-based image service.\n",
-    "job_to_be_done": "Generate or edit images with Codex's built-in image generation from any agent, through an MCP tool or a plain CLI, with Qiaomu poster / video cover / Xiaohongshu prompt craft built in. Use for 生图, 配图, 海报, 视频海报, 视频封面, 小红书配图, 公众号封面, X 封面, 朋友圈海报, 书籍封面, 专辑封面, Mondo 风格, 图生图 and \"用 Codex 画一张\". Picks the scenario ratio and safe areas, a style from 86 bundled styles (66 general + 20 Mondo poster artists), writes the prompt, calls Codex, and returns the saved file path and pixel size. Excludes: editing photos with local tools, charts or diagrams from data, UI mockups, video generation, or anything that needs an API key-based image service.\n",
+    "description": "Generate or edit images with Codex's built-in image generation from any agent, through an MCP tool or a plain CLI. For every image request it first proposes at least four divergent style directions (24 distilled templates, 48 presets, 20 Mondo poster artists), lets the user pick, expands the prompt, generates, and checks the result. Scenario craft for 视频封面, 视频海报, 小红书配图, 公众号封面, X 封面, 朋友圈海报, 书籍封面, 专辑封面, 产品海报, 人物写真, 节气海报, 展览海报, PPT 页面, 图生图. Use for 生图, 配图, 海报, 封面, \"给我几个风格\", \"用 Codex 画一张\". Excludes: editing photos with local tools, charts or diagrams from data, UI mockups, video generation, or anything that needs an API key-based image service.\n",
+    "job_to_be_done": "Generate or edit images with Codex's built-in image generation from any agent, through an MCP tool or a plain CLI. For every image request it first proposes at least four divergent style directions (24 distilled templates, 48 presets, 20 Mondo poster artists), lets the user pick, expands the prompt, generates, and checks the result. Scenario craft for 视频封面, 视频海报, 小红书配图, 公众号封面, X 封面, 朋友圈海报, 书籍封面, 专辑封面, 产品海报, 人物写真, 节气海报, 展览海报, PPT 页面, 图生图. Use for 生图, 配图, 海报, 封面, \"给我几个风格\", \"用 Codex 画一张\". Excludes: editing photos with local tools, charts or diagrams from data, UI mockups, video generation, or anything that needs an API key-based image service.\n",
     "target_users": [
       "Qiaomu operator"
     ],
@@ -33,13 +33,16 @@
       "给这期视频做一张视频封面 16:9 用 codex 画",
       "Generate a poster with Codex image generation in Mondo style",
       "用 mcp 调用 codex 图片生成 做一个公众号封面 提示词帮我写好",
-      "把这个视频海报换成 olly moss 风格 用 codex 重新画"
+      "把这个视频海报换成 olly moss 风格 用 codex 重新画",
+      "我想做一张咖啡店阅读月的海报 先给我几个风格方向 再用 codex 生成",
+      "用 codex 生图 做小红书配图 给我四种风格建议"
     ],
     "should_not_trigger": [
       "用 python 画一个折线图 展示销量数据",
       "帮我写一篇公众号文章",
       "把这段视频剪成 30 秒 加字幕",
-      "设计一个 App 登录页的 figma 原型"
+      "设计一个 App 登录页的 figma 原型",
+      "帮我总结这篇论文的方法部分"
     ],
     "near_neighbor": [
       "text to video 生成一段 5 秒的视频 用 codex",
@@ -54,6 +57,13 @@
   },
   "resources": {
     "references": [
+      "references/design-system/agent-guide.md",
+      "references/design-system/corpus-analysis.json",
+      "references/design-system/examples.json",
+      "references/design-system/filled-examples.md",
+      "references/design-system/routing.json",
+      "references/design-system/template-library.md",
+      "references/design-system/templates.json",
       "references/mondo/artist-styles.md",
       "references/mondo/book-covers.md",
       "references/mondo/composition-patterns.md",

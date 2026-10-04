@@ -1,28 +1,129 @@
 {
   "recommended_threshold": 0.34,
-  "description_required_concepts": ["image", "scenario", "codex", "craft"],
+  "description_required_concepts": [
+    "image",
+    "scenario",
+    "codex",
+    "craft"
+  ],
   "positive_concepts": {
-    "image": ["image", "图片", "生图", "配图", "海报", "封面", "画一张", "图生图", "poster", "cover"],
-    "scenario": ["小红书", "视频封面", "视频海报", "公众号", "朋友圈", "x 封面", "书籍封面", "专辑封面", "xiaohongshu", "video cover", "book cover", "album cover"],
-    "codex": ["codex", "mcp", "cli"],
-    "craft": ["mondo", "style", "风格", "prompt", "提示词", "ratio", "比例", "preset"]
+    "image": [
+      "image",
+      "图片",
+      "生图",
+      "配图",
+      "海报",
+      "封面",
+      "画一张",
+      "图生图",
+      "poster",
+      "cover"
+    ],
+    "scenario": [
+      "小红书",
+      "视频封面",
+      "视频海报",
+      "公众号",
+      "朋友圈",
+      "x 封面",
+      "书籍封面",
+      "专辑封面",
+      "xiaohongshu",
+      "video cover",
+      "book cover",
+      "album cover"
+    ],
+    "codex": [
+      "codex",
+      "mcp",
+      "cli"
+    ],
+    "craft": [
+      "mondo",
+      "style",
+      "风格",
+      "prompt",
+      "提示词",
+      "ratio",
+      "比例",
+      "preset",
+      "模板",
+      "方向",
+      "建议",
+      "suggest",
+      "template"
+    ]
   },
-  "negative_patterns": ["图表", "折线图", "数据可视化", "视频生成", "text to video", "ui mockup", "figma", "修图软件"],
+  "negative_patterns": [
+    "图表",
+    "折线图",
+    "数据可视化",
+    "视频生成",
+    "text to video",
+    "ui mockup",
+    "figma",
+    "修图软件"
+  ],
   "should_trigger": [
-    {"text": "用 codex 帮我生成一张小红书配图 风格要 mondo", "family": "xiaohongshu"},
-    {"text": "给这期视频做一张视频封面 16:9 用 codex 画", "family": "video"},
-    {"text": "Generate a poster with Codex image generation in Mondo style", "family": "poster"},
-    {"text": "用 mcp 调用 codex 图片生成 做一个公众号封面 提示词帮我写好", "family": "mcp"},
-    {"text": "把这个视频海报换成 olly moss 风格 用 codex 重新画", "family": "video"}
+    {
+      "text": "用 codex 帮我生成一张小红书配图 风格要 mondo",
+      "family": "xiaohongshu"
+    },
+    {
+      "text": "给这期视频做一张视频封面 16:9 用 codex 画",
+      "family": "video"
+    },
+    {
+      "text": "Generate a poster with Codex image generation in Mondo style",
+      "family": "poster"
+    },
+    {
+      "text": "用 mcp 调用 codex 图片生成 做一个公众号封面 提示词帮我写好",
+      "family": "mcp"
+    },
+    {
+      "text": "把这个视频海报换成 olly moss 风格 用 codex 重新画",
+      "family": "video"
+    },
+    {
+      "text": "我想做一张咖啡店阅读月的海报 先给我几个风格方向 再用 codex 生成",
+      "family": "directions"
+    },
+    {
+      "text": "用 codex 生图 做小红书配图 给我四种风格建议",
+      "family": "directions"
+    }
   ],
   "should_not_trigger": [
-    {"text": "用 python 画一个折线图 展示销量数据", "family": "chart"},
-    {"text": "帮我写一篇公众号文章", "family": "writing"},
-    {"text": "把这段视频剪成 30 秒 加字幕", "family": "video-edit"},
-    {"text": "设计一个 App 登录页的 figma 原型", "family": "ui"}
+    {
+      "text": "用 python 画一个折线图 展示销量数据",
+      "family": "chart"
+    },
+    {
+      "text": "帮我写一篇公众号文章",
+      "family": "writing"
+    },
+    {
+      "text": "把这段视频剪成 30 秒 加字幕",
+      "family": "video-edit"
+    },
+    {
+      "text": "设计一个 App 登录页的 figma 原型",
+      "family": "ui"
+    },
+    {
+      "text": "帮我总结这篇论文的方法部分",
+      "family": "summary"
+    }
   ],
   "near_neighbor": [
-    {"text": "text to video 生成一段 5 秒的视频 用 codex", "family": "video-generation"},
-    {"text": "把海报做成数据可视化图表", "family": "chart"}
+    {
+      "text": "text to video 生成一段 5 秒的视频 用 codex",
+      "family": "video-generation"
+    },
+    {
+      "text": "把海报做成数据可视化图表",
+      "family": "chart"
+    }
   ]
 }

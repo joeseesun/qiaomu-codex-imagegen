@@ -9,8 +9,8 @@
   ],
   "missing_description_concepts": [],
   "summary": {
-    "total": 11,
-    "passed": 11,
+    "total": 14,
+    "passed": 14,
     "false_positive": 0,
     "false_negative": 0,
     "pass_rate": 1.0
@@ -90,6 +90,35 @@
           "scenario"
         ],
         "negative_pattern": null
+      },
+      {
+        "prompt": "我想做一张咖啡店阅读月的海报 先给我几个风格方向 再用 codex 生成",
+        "family": "directions",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "codex",
+          "craft",
+          "image"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "用 codex 生图 做小红书配图 给我四种风格建议",
+        "family": "directions",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "codex",
+          "craft",
+          "image",
+          "scenario"
+        ],
+        "negative_pattern": null
       }
     ],
     "should_not_trigger": [
@@ -134,6 +163,16 @@
         "score": 0.0,
         "matched_concepts": [],
         "negative_pattern": "figma"
+      },
+      {
+        "prompt": "帮我总结这篇论文的方法部分",
+        "family": "summary",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
       }
     ],
     "near_neighbor": [

@@ -1,0 +1,1539 @@
+{
+ "version": "1.0",
+ "scope": "基于2026-10-04归档的689条公开记录，未覆盖会员全库",
+ "validation": "资料分析与模板结构检查；未执行生图验证",
+ "templates": [
+  {
+   "id": "T01",
+   "name": "巨字与微小叙事",
+   "scenes": "赛事、文化节、品牌宣言、音乐活动",
+   "default_ratio": "3:4",
+   "identity": "大字是场景的墙，微小行动提供尺度；静止水平面被一条斜线打破。",
+   "invariants": [
+    "核心短词占据中部主要宽度",
+    "叙事焦点明显小于字形",
+    "水平承托面与单条斜向线共存"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "headline": "准确标题；不用文字时留空",
+    "subject": "可见主体及不可改变的识别特征",
+    "action": "动作、状态或关系；静物可写静置，不能强制所有模板带人物",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "ink": "文字与结构的深浅颜色，必须与承载面有清楚反差",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，表达{topic}。上部保持浅色空场，中部用“{headline}”形成宽扁厚重的字墙，下部安置{subject}正在{action}，主体相对字墙很小。用清楚的水平面承托行动，再由{motif}形成一条细长斜线连接两层。主色{primary}承载场景，深色{ink}承载信息，小面积{accent}点亮行动焦点。{material}只出现在字块、承托面及其边缘，空场保持干净。文字层级为大标题、短说明、页脚；{text_rule}。保留大字、微小叙事和静面之间的尺度反差。",
+   "avoid": "不要把主体放大成普通主角海报；不要让细线成为多条装饰线；不要平均分配字与图的重量。",
+   "presets": [
+    {
+     "id": "T01-1",
+     "name": "旧刊慢场",
+     "material": "吸墨纸、局部网点、轻微掉墨",
+     "mood": "低速、沉静、带旧刊物温度",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T01-2",
+     "name": "清亮赛报",
+     "material": "平整印刷、硬朗字边、少量摄影细节",
+     "mood": "清爽、直接、有竞技感",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 1,
+     "style": "巨字压景·旧纸慢场·概念海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%A4%BE%E5%8C%BA%E8%B6%B3%E7%90%83%E8%B5%9B%E7%A8%8B--v072oidhksu"
+    },
+    {
+     "record": 70,
+     "style": "巨字冲框·蓝白赛报·体育海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%B7%91%E6%AD%A5%E6%8C%91%E6%88%98%E5%AE%8C%E8%B5%9B%E7%BA%AA%E5%BF%B5--wzt3gg1i0hwq6"
+    },
+    {
+     "record": 247,
+     "style": "巨字压线·明净旧报·运动海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%BD%91%E7%90%83%E4%BF%B1%E4%B9%90%E9%83%A8%E8%B5%9B%E6%97%A5%E6%B5%B7%E6%8A%A5--ezriaq1c19jto"
+    },
+    {
+     "record": 305,
+     "style": "巨字慢场",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%B3%B3%E6%B1%A0%E8%AE%AD%E7%BB%83%E5%8D%A1--1fierjh1jp4sjl"
+    }
+   ]
+  },
+  {
+   "id": "T02",
+   "name": "物象破框",
+   "scenes": "产品上新、植物主题、电影概念、节气",
+   "default_ratio": "3:4",
+   "identity": "框线建立秩序，实体穿过框线制造一次明确的越界。",
+   "invariants": [
+    "一个主框",
+    "主体在一处穿出框线",
+    "穿出部分与框内部分属于同一实体"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "background": "底场的色彩与明度角色",
+    "subject": "可见主体及不可改变的识别特征",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "headline": "准确标题；不用文字时留空",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "ink": "文字与结构的深浅颜色，必须与承载面有清楚反差",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。在高明度{background}上设置一个细线矩形框，框内安置{subject}；让主体的{motif}沿自身生长或运动方向穿出框线，与框外留白形成真实连续的轮廓。标题“{headline}”位于越界方向的相反一侧，与穿出的实体保持空间张力。主框保持平面，主体依据{material}表现触感，接触和遮挡顺序清晰。配色用{primary}支撑主体，{accent}仅落在越界焦点，文字为{ink}。{text_rule}。",
+   "avoid": "不要把主体剪成悬浮贴纸；不要四边同时破框；不要凭空添加第二个主体。",
+   "presets": [
+    {
+     "id": "T02-1",
+     "name": "清透巨叶",
+     "material": "薄叶透光、细脉、干净纸底",
+     "mood": "轻盈、自然",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T02-2",
+     "name": "雪枝墨框",
+     "material": "淡墨枝条、轻雪粒、纤细框线",
+     "mood": "清寂、含蓄",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 112,
+     "style": "破框巨叶·清透纸感·节气海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%B0%B7%E9%9B%A8%E6%96%B0%E8%8C%B6%E8%8A%82%E6%B0%94%E6%B5%B7%E6%8A%A5--fxltq6t3j9uc"
+    },
+    {
+     "record": 120,
+     "style": "雪枝穿框·清寂水墨·节气海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%A4%A7%E5%AF%92%E8%85%8A%E6%A2%85%E6%8A%A5%E6%98%A5--17pchtysqfv2k"
+    },
+    {
+     "record": 272,
+     "style": "局部破框",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%8E%B2%E5%8F%B6%E7%A2%A7%E8%89%B2%E8%AF%97%E8%AF%8D%E8%B5%8F%E6%9E%90--wzi1p7cmlhnf"
+    }
+   ]
+  },
+  {
+   "id": "T03",
+   "name": "中央光隙",
+   "scenes": "节气、成长、环保、探索主题",
+   "default_ratio": "3:4",
+   "identity": "两侧巨大色域夹出中央通道，通道尽头的微小焦点表现希望。",
+   "invariants": [
+    "两侧大块面主导画面",
+    "中央狭长明亮通道由上贯穿到下",
+    "微小焦点位于通道下端"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "subject": "可见主体及不可改变的识别特征",
+    "action": "动作、状态或关系；静物可写静置，不能强制所有模板带人物",
+    "headline": "准确标题；不用文字时留空",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。两侧以{primary}的巨大有机刷色块压近中央，顶部及外缘出血；中央留出略有曲折、向下扩开的近白通道。在通道底端放置微小的{subject}正在{action}，用尺度差制造深远空间。标题“{headline}”拆成少量大字分置上缘两端；短说明沿通道排成疏朗窄列，一笔{accent}手写线横穿窄列但不阻塞通道。块面呈{material}，纹理集中在色块边缘。{text_rule}。",
+   "avoid": "不要把通道填满文字；不要把微小焦点放大；不要让两侧变成写实背景墙。",
+   "presets": [
+    {
+     "id": "T03-1",
+     "name": "清润春生",
+     "material": "水粉平涂、干刷纵痕、微弱纸纤维",
+     "mood": "清润、含蓄希望",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T03-2",
+     "name": "峡谷远行",
+     "material": "宽阔有机块面、浅色纸本印刷",
+     "mood": "独行、深远、安静",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 2,
+     "style": "中央光隙·清透纸感·节气海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%B0%B7%E9%9B%A8%E6%96%B0%E8%8C%B6%E8%8A%82%E6%B0%94%E6%B5%B7%E6%8A%A5--8jopr6b0v4qc"
+    },
+    {
+     "record": 458,
+     "style": "中央光隙·清透纸感·节气海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%86%AC%E8%87%B3%E7%A5%9D%E7%A6%8F%E6%97%A5%E5%8E%86%E6%B5%B7%E6%8A%A5--1gsm1fg1n3uf22"
+    },
+    {
+     "record": 621,
+     "style": "中央光隙·清透纸感·节气海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%B8%85%E6%98%8E%E8%B8%8F%E9%9D%92%E8%8A%82%E6%B0%94%E6%B5%B7%E6%8A%A5--m8kpac1m2gjj2"
+    }
+   ]
+  },
+  {
+   "id": "T04",
+   "name": "东方水墨编辑",
+   "scenes": "茶礼、文化展、节气、文旅与品牌封面",
+   "default_ratio": "3:4",
+   "identity": "水墨是空间与版式的一部分，宋体大字、透明色域和留白互相穿插。",
+   "invariants": [
+    "疏朗纸白",
+    "水墨意象从边缘进入",
+    "大字与图形具有受控遮挡关系"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "subject": "可见主体及不可改变的识别特征",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "headline": "准确标题；不用文字时留空",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。暖白纸面占主导，将{subject}提炼为{motif}的疏朗水墨走势，从一侧边缘伸入并延续到画外。用一块透明{primary}色域和一处细长{accent}色块划分轻重，不把画面铺满。标题“{headline}”采用横细竖重、内白清楚的中文宋体结构，与墨形局部穿插；必要说明靠独立基线排列。近处墨形清楚，远层降低对比并含蓄渗化，纸纤维只在裸露背景可见。{text_rule}。",
+   "avoid": "不要无依据添加古诗、印章署名或英文；不要把书法结构拉坏；不要每个角落都加枝叶。",
+   "presets": [
+    {
+     "id": "T04-1",
+     "name": "清透墨枝",
+     "material": "水墨扫描、浅色透明叠层、细纸纹",
+     "mood": "明亮、清雅",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T04-2",
+     "name": "石纹围合",
+     "material": "浅色矿物边界、少量淡墨、完整中央留白",
+     "mood": "清寂、稳重",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 23,
+     "style": "中线分屏·清雅留白·展览海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%B0%B4%E5%A2%A8%E4%B9%A6%E6%B3%95%E5%B1%95--sf8miv6dzr33"
+    },
+    {
+     "record": 27,
+     "style": "大字水墨穿插·清透东方·文化海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%8A%82%E6%B0%94%E8%8C%B6%E7%82%B9%E7%A4%BC%E7%9B%92%E5%8C%85%E8%A3%85%E4%B8%BB%E8%A7%86%E8%A7%89--188rrb8m7h1wu"
+    },
+    {
+     "record": 161,
+     "style": "石纹围合留白·清寂克制·文化展览海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E9%99%B6%E7%93%B7%E5%99%A8%E7%89%A9%E5%8F%91%E5%B8%83--czn3g3w8ec3v"
+    },
+    {
+     "record": 602,
+     "style": "水墨留白·清雅诗性·节气海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%99%BD%E9%9C%B2%E8%8A%82%E6%B0%94%E7%A4%BE%E4%BA%A4%E6%B5%B7%E6%8A%A5--n9me0xxhmogd"
+    }
+   ]
+  },
+  {
+   "id": "T05",
+   "name": "纸雕与织物地貌",
+   "scenes": "节气、茶品牌、生态、生活方式",
+   "default_ratio": "3:4",
+   "identity": "主题被转译成有材料厚度的地貌，微小物象为抽象层叠提供故事。",
+   "invariants": [
+    "同一种材料构成连续地貌",
+    "层间存在薄而可信的接触阴影",
+    "微小叙事焦点不抢地貌"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "subject": "可见主体及不可改变的识别特征",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "action": "动作、状态或关系；静物可写静置，不能强制所有模板带人物",
+    "background": "底场的色彩与明度角色",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "headline": "准确标题；不用文字时留空",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。把{subject}的轮廓或生长节律转译为连续层叠的{motif}地貌，沿一条斜向或水平主轴展开。整片地貌统一采用{material}，保留层间厚度、纤维方向和很浅的接触阴影。在地貌边界安置一处微小的{action}叙事焦点。背景{background}保持明亮空域，{primary}通过同色深浅组织层次，{accent}只点亮焦点。标题“{headline}”独立于层叠区，辅文短小、间距疏朗。{text_rule}。",
+   "avoid": "不要把纸雕做成平面渐变；不要纸、金属、塑料一起混用；不要小人均匀撒满。",
+   "presets": [
+    {
+     "id": "T05-1",
+     "name": "纸雕田垄",
+     "material": "薄纸切边、柔和压纹、轻接触阴影",
+     "mood": "温润、质朴",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T05-2",
+     "name": "织物微舟",
+     "material": "细织纹、自然褶皱、线性纤维",
+     "mood": "清雅、触感柔软",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 96,
+     "style": "织物地貌·清润诗意·节气海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%99%BD%E9%9C%B2%E4%B8%9D%E7%BB%B8%E6%8A%A4%E8%82%A4%E6%B5%B7%E6%8A%A5--17k0du0gsz49m"
+    },
+    {
+     "record": 127,
+     "style": "织物微舟·清雅静谧·节气海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%B0%B7%E9%9B%A8%E8%8A%B1%E4%BA%8B%E5%8D%A1--1i5e56q1o2xmjc"
+    },
+    {
+     "record": 188,
+     "style": "纸雕留白·温润质朴·节气海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%98%A5%E5%88%86%E6%96%B0%E8%8C%B6%E7%A4%BC%E7%9B%92--1gtuhi010ryv2q"
+    },
+    {
+     "record": 517,
+     "style": "织物微舟·清雅静谧·节气海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%99%BD%E9%9C%B2%E8%8C%B6%E5%B8%AD--1pwozu6qdaf60"
+    }
+   ]
+  },
+  {
+   "id": "T06",
+   "name": "民艺撞色招贴",
+   "scenes": "社区节庆、音乐、咖啡市集、开业",
+   "default_ratio": "3:4",
+   "identity": "两枚朴拙图符以冷暖强色对话，手写线把图像区和跳跃资讯区缝合。",
+   "invariants": [
+    "两个相关图符一大一小",
+    "有限色实印",
+    "手写短句跨过图符下缘"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "subject": "可见主体及不可改变的识别特征",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "background": "底场的色彩与明度角色",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。从主题中选择两个互有关联的{subject}符号，做成略不规整的民间刻印剪影，一大一小错落放在中央；两者分别承载{primary}与{accent}，明亮底色{background}覆盖最大面积。标题“{headline}”宽阔、近等粗，适度共享部件但每字仍可辨认。以一条倾斜手写短句跨过图符下缘；下部将{copy}排成短色条、日期块和窄列说明。呈{material}，只在实色内部和边缘留少量吃墨、缺墨。{text_rule}。",
+   "avoid": "不要泛黄棕色滤镜；不要光滑矢量修正全部手工痕迹；不要生成不存在的民俗事实。",
+   "presets": [
+    {
+     "id": "T06-1",
+     "name": "粗印民艺",
+     "material": "有限色丝网印刷、粗纤维纸、局部错位",
+     "mood": "欢乐、社区感",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T06-2",
+     "name": "剪纸节俗",
+     "material": "刻剪轮廓、实色墨层、局部镂空",
+     "mood": "热烈、朴拙",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 288,
+     "style": "双椅撞色·粗印民艺·节庆招贴",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%92%96%E5%95%A1%E6%96%87%E5%8C%96%E8%8A%82--e29uls11s1lee"
+    },
+    {
+     "record": 338,
+     "style": "大字剪纸拼贴·粗粝民艺·节气宣传海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%8D%9A%E7%89%A9%E9%A6%86%E6%B0%91%E8%89%BA%E5%B1%95%E8%A7%88%E6%B5%B7%E6%8A%A5--1bytlv71ywqn77"
+    },
+    {
+     "record": 299,
+     "style": "节气蝉鸣国风版画",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%AB%8B%E7%A7%8B%E8%9D%89%E5%A3%B0--smh1fhsgj0s1"
+    }
+   ]
+  },
+  {
+   "id": "T07",
+   "name": "童画与硬排版",
+   "scenes": "少儿活动、美术展、亲子教育",
+   "default_ratio": "3:4",
+   "identity": "粗重现代字与松软儿童笔触互相挤压，细框提供第三种秩序。",
+   "invariants": [
+    "上下巨字形成闸门",
+    "中间童画有真实笔压变化",
+    "童画局部跨过细框"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "headline": "准确标题；不用文字时留空",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "subject": "可见主体及不可改变的识别特征",
+    "action": "动作、状态或关系；静物可写静置，不能强制所有模板带人物",
+    "background": "底场的色彩与明度角色",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。顶部与底部各放一组“{headline}”中的短词，用极粗深色几何字形成上下闸门。两者之间设纤细框线，框内用{material}画出{subject}正在{action}；保留歪斜轮廓、露白、不均匀填色和钝圆笔端，让少量笔迹穿过框线并进入巨字。{background}是洁净浅纸色，{primary}承担主要童画，{accent}落在一个放射形焦点。说明只占一处窄栏。{text_rule}。",
+   "avoid": "不要把儿童画修成平滑图标；不要统一随机噪点；不要让文字与插画各自孤立。",
+   "presets": [
+    {
+     "id": "T07-1",
+     "name": "蜡笔展览",
+     "material": "真实蜡笔擦画、蜡屑、粗纸纤维",
+     "mood": "活泼、直接",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T07-2",
+     "name": "单线童趣",
+     "material": "抖动细线、少量纯色填充",
+     "mood": "轻快、友好",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 39,
+     "style": "巨字夹童画·稚拙明快·儿童主题海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%B0%91%E5%84%BF%E7%BE%8E%E6%9C%AF%E5%B1%95--1rq9wk71gl19zb"
+    },
+    {
+     "record": 110,
+     "style": "留白线绘童趣",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E4%BA%91%E6%9C%B5%E9%A3%9E%E8%A1%8C%E5%AE%9D%E5%AE%9D--1bpmadp1n075ih"
+    },
+    {
+     "record": 151,
+     "style": "拙朴留白叙事",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%A9%9A%E7%A4%BC%E6%B5%81%E7%A8%8B--hk102pf0wz4d"
+    }
+   ]
+  },
+  {
+   "id": "T08",
+   "name": "摄影与花境拼贴",
+   "scenes": "个人纪念、生活方式、旅行、女性主题",
+   "default_ratio": "3:4",
+   "identity": "刊头、摄影焦点、手绘前景、底栏构成连续层次，照片与插画必须相互遮挡。",
+   "invariants": [
+    "真实摄影焦点位于中轴偏下",
+    "手绘前景局部覆盖照片",
+    "上部刊头与底部编辑栏形成收束"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "subject": "可见主体及不可改变的识别特征",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "background": "底场的色彩与明度角色",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。把{subject}以真实摄影剪影放在中轴偏下，保留自然姿态；远景压成低对比横向色层，手绘{motif}从两侧与底缘进入并遮住主体的少量下缘。上部浅色刊头以高对比衬线标题“{headline}”建立重点，少量纤细说明按基线排列；底部设置明亮编辑栏承载{copy}。使用{background}柔雾底、{primary}主题色、稳定深色摄影骨架与极少{accent}点色。摄影边缘清楚，插画平面而轻透。{text_rule}。",
+   "avoid": "不要把花卉平均围一圈；不要遮住脸和身份特征；不要添加虚构署名或装饰性多语文案。",
+   "presets": [
+    {
+     "id": "T08-1",
+     "name": "柔彩花境",
+     "material": "干净照片剪贴、轻手绘平涂、透明色罩",
+     "mood": "浪漫、轻复古",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T08-2",
+     "name": "旅行手账",
+     "material": "自然旅行照片、少量主题手绘、浅纸面",
+     "mood": "亲近、松弛",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 30,
+     "style": "花境人像拼贴·柔彩轻复古·女性主题海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E4%B8%AA%E4%BA%BA%E5%86%99%E7%9C%9F%E7%BA%AA%E5%BF%B5%E6%B5%B7%E6%8A%A5--z2547lnzpjp9"
+    },
+    {
+     "record": 116,
+     "style": "明亮手绘拼贴",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%9C%A3%E8%AF%9E%E5%B0%91%E5%A5%B3%E6%8B%BC%E8%B4%B4--1yowi5d1rzf62x"
+    },
+    {
+     "record": 536,
+     "style": "花境人像拼贴·柔彩轻复古·女性主题海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%8A%B1%E8%89%BA%E8%AF%BE%E7%A8%8B%E6%8B%9B%E5%8B%9F%E6%B5%B7%E6%8A%A5--ql8k3ps96y79"
+    }
+   ]
+  },
+  {
+   "id": "T09",
+   "name": "克制棚拍肖像",
+   "scenes": "职业头像、人物专题、品牌人物",
+   "default_ratio": "4:5",
+   "identity": "一主一辅的柔光塑造骨相，动作支撑与皮肤细节决定可信度。",
+   "invariants": [
+    "身份特征稳定",
+    "主光方向明确",
+    "手与道具具有可信支撑"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "subject": "可见主体及不可改变的识别特征",
+    "reference": "参考文件及用途；无则写无，真实身份一致任务需身份参考",
+    "action": "动作、状态或关系；静物可写静置，不能强制所有模板带人物",
+    "lighting": "主光方向、软硬与环境回填；平面模板不强加摄影布光",
+    "background": "底场的色彩与明度角色",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "mood": "通过明度、尺度、动作和工艺表现的情绪",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的棚拍肖像。人物为{subject}，参考图{reference}用于保持相貌、年龄感和辨识特征。头肩至胸部构图、眼平视角、短长焦透视；人物正在{action}，双手与道具的抓握和支撑准确。{lighting}塑造清楚但柔和的面部过渡，背景为低对比{background}，服装{primary}与背景靠明度分离。妆发适配本人，不改变骨相；保留毛孔、细发和{material}的真实纹理。情绪{mood}用目光、呼吸与嘴角变化表现。{text_rule}。",
+   "avoid": "避免身份漂移、塑料皮肤、僵硬手指、无支撑道具和矛盾眼神光；镜头描述是视觉意图而非真实拍摄元数据。",
+   "presets": [
+    {
+     "id": "T09-1",
+     "name": "柔灰专注",
+     "material": "哑光西装、自然皮肤、灰底",
+     "mood": "专注、克制",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T09-2",
+     "name": "暗调冷峻",
+     "material": "深色服装、黑位有层次、细发可见",
+     "mood": "沉静、疏离",
+     "structural_override": "深暗背景中用同向柔侧主光与很弱轮廓光分离人物，黑位保留衣料和发丝层次；填充不平均抹平骨相。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 47,
+     "style": "柔灰棚拍光·冷峻黑西装·相机主题写真",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%90%A5%E7%8F%80%E7%BC%96%E8%BE%91%E8%82%96%E5%83%8F%E5%B0%81%E9%9D%A2--1pan3mu1i3a4wc"
+    },
+    {
+     "record": 168,
+     "style": "侧柔暗调·蓬发冷峻·男士写真",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%88%9B%E6%84%8F%E6%80%BB%E7%9B%91%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E7%85%A7--117ehpgs9lala"
+    }
+   ]
+  },
+  {
+   "id": "T10",
+   "name": "环境自然肖像",
+   "scenes": "人物故事、旅行、城市生活、个人品牌",
+   "default_ratio": "4:5",
+   "identity": "人物真实地处在环境中，动作先成立，光与景深再分离主体。",
+   "invariants": [
+    "环境与动作互相解释",
+    "身体具有真实支撑点",
+    "自然光向与眼神光一致"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "subject": "可见主体及不可改变的识别特征",
+    "scene": "真实或明确标记为概念的环境",
+    "action": "动作、状态或关系；静物可写静置，不能强制所有模板带人物",
+    "reference": "参考文件及用途；无则写无，真实身份一致任务需身份参考",
+    "mood": "通过明度、尺度、动作和工艺表现的情绪",
+    "lighting": "主光方向、软硬与环境回填；平面模板不强加摄影布光",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "background": "底场的色彩与明度角色",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的环境肖像，主题{topic}。人物{subject}在{scene}中正在{action}，参考图{reference}用于身份一致。以自然标准镜头透视取膝上或半身构图，保留能解释场景的环境空间；身体落点、靠墙位置和手臂支撑自然，表情{mood}克制。{lighting}为主要光源，环境回填较弱，远景降低细节与对比。{primary}用于服装，{background}来自真实环境，皮肤不染成主题色。保留{material}、自然不对称与少量生活痕迹。{text_rule}。",
+   "avoid": "不要把环境替换成摄影棚；不要无依据加戏剧姿势；不要让服饰改变本人年龄与身形。",
+   "presets": [
+    {
+     "id": "T10-1",
+     "name": "暮阳天台",
+     "material": "棉衬衫、浅混凝土、微暖自然肤色",
+     "mood": "松弛、神游",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T10-2",
+     "name": "林荫清透",
+     "material": "轻薄衣料、柔绿环境、自然皮肤",
+     "mood": "安静、清新",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 389,
+     "style": "暮阳侧光·白衫松弛·天台写真",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%94%B7%E6%80%A7%E6%9C%8D%E8%A3%85%E5%93%81%E7%89%8C%E4%B8%BB%E8%A7%86%E8%A7%89--bj8evhv2n46l"
+    },
+    {
+     "record": 515,
+     "style": "林荫柔光·蜜桃淡妆·户外写真",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%98%A5%E6%97%A5%E5%86%99%E7%9C%9F%E5%B0%81%E9%9D%A2--figfkx1l48vvh"
+    },
+    {
+     "record": 72,
+     "style": "蓝天柔光·粉衫橘果·清新写真",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E9%B2%9C%E6%9E%9C%E5%88%86%E4%BA%AB%E5%B0%81%E9%9D%A2--aksdyf1dg9dvj"
+    }
+   ]
+  },
+  {
+   "id": "T11",
+   "name": "婚礼与仪式肖像",
+   "scenes": "婚纱、新娘、仪式纪念",
+   "default_ratio": "4:5",
+   "identity": "身份稳定是底座；薄纱、妆发和单一光线建立仪式感。",
+   "invariants": [
+    "人物身份与年龄感稳定",
+    "白纱高光有细节",
+    "饰品与身体尺寸相称"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "subject": "可见主体及不可改变的识别特征",
+    "reference": "参考文件及用途；无则写无，真实身份一致任务需身份参考",
+    "scene": "真实或明确标记为概念的环境",
+    "action": "动作、状态或关系；静物可写静置，不能强制所有模板带人物",
+    "lighting": "主光方向、软硬与环境回填；平面模板不强加摄影布光",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "mood": "通过明度、尺度、动作和工艺表现的情绪",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，人物{subject}以{reference}保持身份与自然年龄感。在{scene}中做{action}，姿势松弛、颈肩连贯。{lighting}使面部和薄纱形成同向光感，白色高光保留织纹与层次。使用适配本人肤色的轻薄妆面，{motif}作为一处妆发或饰品重点，{primary}承载柔和环境色，{accent}只落在小型饰品。肤质自然，薄纱透明叠层与头发接触关系可信，情绪{mood}。{text_rule}。",
+   "avoid": "不要换脸、过度磨皮或统一网红妆；不要白纱过曝；不要漂浮珠饰和重度梦幻滤镜。",
+   "presets": [
+    {
+     "id": "T11-1",
+     "name": "晴天珍珠",
+     "material": "薄白纱、细珍珠、自然皮肤",
+     "mood": "明朗、庄重",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T11-2",
+     "name": "暖窗花缎",
+     "material": "缎面、软薄纱、少量花饰",
+     "mood": "温柔、亲密",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 24,
+     "style": "柔光白羽·蜜桃妆发·新娘写真",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%96%B0%E5%A8%98%E5%A6%86%E5%AE%B9%E6%89%8B%E5%86%8C--612f1z197h71z"
+    },
+    {
+     "record": 51,
+     "style": "蓝天硬光·白纱珍珠妆·婚礼写真",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%99%B4%E7%A9%BA%E5%A9%9A%E7%A4%BC%E8%AF%B7%E6%9F%AC%E5%B0%81%E9%9D%A2--1c70zg7y83l73"
+    },
+    {
+     "record": 88,
+     "style": "奶油柔光·珍珠卷发·婚纱肖像",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%A9%9A%E7%BA%B1%E5%B7%A5%E4%BD%9C%E5%AE%A4%E4%B8%BB%E8%A7%86%E8%A7%89--1gnv6ybmflfd7"
+    },
+    {
+     "record": 491,
+     "style": "暖窗柔光·花缎少女·婚纱写真",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%96%B0%E5%A8%98%E8%82%96%E5%83%8F%E7%A4%BE%E4%BA%A4%E6%B5%B7%E6%8A%A5--m4c34k1614rz2"
+    }
+   ]
+  },
+  {
+   "id": "T12",
+   "name": "食品触感近摄",
+   "scenes": "烘焙、甜品、餐饮、食品上新",
+   "default_ratio": "3:4",
+   "identity": "放大可食用的断面与真实触感，信息退到留白而不覆盖食物。",
+   "invariants": [
+    "食品占据中段视觉重量",
+    "符合真实成分的质地与断面",
+    "阴影浅而具有接触感"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "subject": "可见主体及不可改变的识别特征",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "action": "动作、状态或关系；静物可写静置，不能强制所有模板带人物",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "lighting": "主光方向、软硬与环境回填；平面模板不强加摄影布光",
+    "background": "底场的色彩与明度角色",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，产品{subject}，主题{topic}。将产品放大到中部主要宽度，采用{action}的近摄角度，清楚呈现{motif}所指的真实层次；表面依据{material}呈现，不新增未提供的食材。{lighting}均匀包裹主体，阴影浅且靠近接触面。上方{background}保留呼吸空间，标题“{headline}”细长克制，底部以小标签承载{copy}。主体自然色{primary}提供主要色彩，{accent}仅做小面积信息强调。{text_rule}。",
+   "avoid": "不要塑料食物、夸大馅料或虚构营养功效；不要厚重道具背景；价格只能使用提供的值。",
+   "presets": [
+    {
+     "id": "T12-1",
+     "name": "奶油清爽",
+     "material": "柔软乳脂层、真实水果切面、清洁高光",
+     "mood": "新鲜、轻甜",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T12-2",
+     "name": "暖纸酥香",
+     "material": "真实酥皮层、细碎断口、暖亮背景",
+     "mood": "温暖、有食欲",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 9,
+     "style": "大物近摄·奶油清爽·食物海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E9%85%B8%E5%A5%B6%E6%B0%B4%E6%9E%9C%E6%9D%AF%E4%BF%83%E9%94%80%E6%B5%B7%E6%8A%A5--1dhu5tl1450a2x"
+    },
+    {
+     "record": 41,
+     "style": "酥皮剖面·暖纸食香·烘焙海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%8D%89%E8%8E%93%E4%B8%B9%E9%BA%A6%E7%94%9C%E7%82%B9--9q9wvk5kti2e"
+    },
+    {
+     "record": 163,
+     "style": "切面近景·和风洁净·甜品海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%A8%B1%E6%A1%83%E7%BA%A2%E8%B1%86%E5%A5%B6%E9%85%AA%E5%8D%B7--4lggdv1sktqcj"
+    },
+    {
+     "record": 383,
+     "style": "切面聚焦·橄榄绿纸感·食品海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%89%8B%E4%BD%9C%E9%9D%A2%E5%8C%85%E5%88%87%E9%9D%A2--cqgl191icqp4d"
+    }
+   ]
+  },
+  {
+   "id": "T13",
+   "name": "饮品微距风味",
+   "scenes": "茶饮、气泡水、果饮、口感概念",
+   "default_ratio": "3:4",
+   "identity": "液体或果肉切面变成放大景观，气泡与水光体现风味而非替代产品事实。",
+   "invariants": [
+    "微距切面占一侧或上部",
+    "透明层的光路与材质一致",
+    "信息区与切面分开"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "subject": "可见主体及不可改变的识别特征",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "lighting": "主光方向、软硬与环境回填；平面模板不强加摄影布光",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "background": "底场的色彩与明度角色",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，饮品{subject}表达{topic}。把{motif}指定的真实原料或液体特征转为一块超近距离切面，从上部或侧缘裁入，显示自然气泡、透光层次与少量凝露。{lighting}穿过透明材质，亮部清澈而不过曝，{primary}从实际原料提取，{background}保持高明度留白。标题“{headline}”和{copy}以小而清楚的短组排列在另一侧，只有一处{accent}用于识别。{text_rule}。",
+   "avoid": "不要所有饮品都加气泡；不要把原料切面变成不相关花纹；不要虚构零糖、热量或原料产地。",
+   "presets": [
+    {
+     "id": "T13-1",
+     "name": "果肉水光",
+     "material": "真实果肉纤维、半透明水光、少量凝露",
+     "mood": "清甜、轻盈",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T13-2",
+     "name": "气泡切面",
+     "material": "透明液体、大小有别的真实气泡",
+     "mood": "清冽、鲜活",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 243,
+     "style": "气泡微距切面·清透留白·饮品风味海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%99%BD%E6%A1%83%E4%B9%B3%E9%85%B8%E9%A5%AE%E7%A4%BE%E5%AA%92%E5%B0%81%E9%9D%A2--1p59nsr1a86slf"
+    },
+    {
+     "record": 600,
+     "style": "气泡微距切面·清透留白·饮品风味海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%93%9D%E8%8E%93%E6%B0%94%E6%B3%A1%E6%B0%B4%E7%94%B5%E5%95%86%E8%AF%A6%E6%83%85%E9%A6%96%E5%B1%8F--1i2t1t71h4u3y3"
+    },
+    {
+     "record": 46,
+     "style": "露珠近摄·清甜明亮·食品海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%9C%9C%E6%A1%83%E6%9E%9C%E5%88%87%E6%B5%B7%E6%8A%A5--dl8hp6ohp0bk"
+    }
+   ]
+  },
+  {
+   "id": "T14",
+   "name": "植物手绘产品广告",
+   "scenes": "美妆、香氛、植物产品、日用品",
+   "default_ratio": "3:4",
+   "identity": "真实产品与平面手绘并置，水彩路径环抱并贴附载体而非均匀铺花。",
+   "invariants": [
+    "真实产品是中央偏下载体",
+    "手绘沿环抱路径游走",
+    "顶部文字留白完整"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "subject": "可见主体及不可改变的识别特征",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "reference": "参考文件及用途；无则写无，真实身份一致任务需身份参考",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "background": "底场的色彩与明度角色",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，产品{subject}，主题{topic}。产品正面陈列于中央偏下，依据{reference}保持轮廓、包装文字与真实材质，表面呈{material}。由{motif}形成稀疏水彩路径，从两侧环抱产品，部分贴附其表面、部分延伸到边缘；透明洗色、少量细线和局部颜料沉积形成层次。顶部{background}保留宽阔空白，标题“{headline}”与说明{copy}按共同基线组织。{primary}承载产品与淡彩，{accent}只用于方向性笔触。{text_rule}。",
+   "avoid": "不要更换包装品牌或形状；植物不代表虚构成分；不要平均铺满花纹或吞没产品。",
+   "presets": [
+    {
+     "id": "T14-1",
+     "name": "清透水彩",
+     "material": "透明玻璃、柔和金属反射、水彩洗色",
+     "mood": "轻盈、洁净",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T14-2",
+     "name": "植物线绘",
+     "material": "哑光包装、细线叶脉、少量淡彩",
+     "mood": "自然、克制",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 78,
+     "style": "彩绘环绕·清透洁净·美妆海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%B8%85%E9%80%8F%E7%B2%BE%E5%8D%8E%E6%96%B0%E5%93%81%E6%B5%B7%E6%8A%A5--w05iv6zxic3c"
+    },
+    {
+     "record": 593,
+     "style": "彩绘环绕·清透洁净·美妆海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E9%A6%99%E6%B0%9B%E8%BA%AB%E4%BD%93%E4%B9%B3%E7%A4%BC%E7%9B%92%E6%B5%B7%E6%8A%A5--nj5x9n1jdb3er"
+    },
+    {
+     "record": 533,
+     "style": "植物绘影通透",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%83%AD%E7%B2%89%E9%A6%99%E8%8D%89%E6%96%B0%E5%93%81--a962881r6cwpk"
+    }
+   ]
+  },
+  {
+   "id": "T15",
+   "name": "科技轨道产品主视觉",
+   "scenes": "硬件、科技发布、概念产品",
+   "default_ratio": "3:4",
+   "identity": "产品是稳定中心，环形波纹和局部光线共同指向它。",
+   "invariants": [
+    "唯一产品焦点",
+    "环轨围绕焦点而非任意散落",
+    "产品与台面接触可信"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "subject": "可见主体及不可改变的识别特征",
+    "reference": "参考文件及用途；无则写无，真实身份一致任务需身份参考",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "lighting": "主光方向、软硬与环境回填；平面模板不强加摄影布光",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "background": "底场的色彩与明度角色",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，产品{subject}依据{reference}保留结构。主体位于稳定悬台或圆形承托面，{motif}化为同心波纹或一组细环轨，从周围向中心聚焦。{lighting}让产品的{material}细节可见，环轨高光与产品反射方向一致。背景{background}低细节，主色{primary}支撑空间，{accent}仅用于一个节点或环轨亮边。标题“{headline}”与{copy}落在独立信息区；产品规格、性能数字逐字使用提供内容。{text_rule}。",
+   "avoid": "不要凭空添加接口、按钮、性能和标志；不要激光乱飞；不要让背景比产品更亮更抢眼。",
+   "presets": [
+    {
+     "id": "T15-1",
+     "name": "清透未来",
+     "material": "浅哑光台面、细波纹、干净漫射高光",
+     "mood": "清爽、精确",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T15-2",
+     "name": "暗场仪式",
+     "material": "深色台面、柔粒光带、克制环轨高光",
+     "mood": "沉静、有发布仪式感",
+     "structural_override": "底场与台面为低明度但细节可辨的深色，光轨仅有一处干净亮边；让柔粒光带引向产品。用高明度文字确保读取，取消清透未来预设的浅色台面。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 200,
+     "style": "环波悬台·清透未来·产品海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%A9%BA%E6%B0%94%E5%87%80%E5%8C%96%E5%99%A8%E7%BA%BF%E4%B8%8B%E7%81%AF%E7%AE%B1--79b6r8b992b2"
+    },
+    {
+     "record": 507,
+     "style": "环波悬台·清透未来·产品海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%99%BA%E8%83%BD%E9%A6%99%E6%B0%9B%E6%96%B0%E5%93%81%E5%8F%91%E5%B8%83--jukclgwa5ry6"
+    },
+    {
+     "record": 508,
+     "style": "细线光环·清透冷静·科技发布海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%8A%AF%E7%89%87%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E%E9%A1%B5--1vj8pnskh2pfi"
+    },
+    {
+     "record": 625,
+     "style": "环波悬台·清透未来·产品海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%8A%A4%E8%82%A4%E7%B2%BE%E5%8D%8E%E7%94%B5%E5%95%86%E9%A6%96%E5%8F%91--vfcqscqsor8e"
+    }
+   ]
+  },
+  {
+   "id": "T16",
+   "name": "巨物微缩剧场",
+   "scenes": "创意商业、食品、品牌故事、主题空间",
+   "default_ratio": "3:4",
+   "identity": "巨物真正承担可进入的空间功能，微型人物的动作必须回应它。",
+   "invariants": [
+    "一件巨物构成地貌或建筑",
+    "微型人物具有行动与支撑点",
+    "多个动作形成疏密有别的小故事"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "subject": "可见主体及不可改变的识别特征",
+    "scene": "真实或明确标记为概念的环境",
+    "action": "动作、状态或关系；静物可写静置，不能强制所有模板带人物",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "lighting": "主光方向、软硬与环境回填；平面模板不强加摄影布光",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "background": "底场的色彩与明度角色",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。将{subject}放大成微型人物可进入的{scene}空间，在不损失核心轮廓的前提下，用入口或自然凹处展示{action}的小故事。近处人物稍大而清楚，远处变小且轻微虚化，动作与设施相互回应。巨物呈{material}，台面干净，{lighting}产生柔和但真实的接触阴影。{primary}承担巨物重量，{background}形成明亮空域，{accent}只用于几个小人物。上部标题“{headline}”和底部{copy}分级排列。{text_rule}。",
+   "avoid": "不要把小人当作装饰撒点；不要所有人物同尺寸；不要为了入口破坏产品身份。",
+   "presets": [
+    {
+     "id": "T16-1",
+     "name": "食品小镇",
+     "material": "真实食物断面、微缩设施、棚拍微距感",
+     "mood": "鲜活、有幽默感",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T16-2",
+     "name": "纪念数字空间",
+     "material": "哑光数字凹槽、细小圆体、真实接触阴影",
+     "mood": "温柔、有仪式感",
+     "structural_override": "巨物主体改为已提供的纪念数字轮廓，表现厚实哑光墙面上的深凹开口；内部圆体和主题装饰沿轮廓填充，一个真实人物坐或站在数字下沿并跨过边界。取消多组小人活动，保留巨型尺度、可进入空间与真实支撑。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 324,
+     "style": "巨物微缩剧场·明快鲜活·创意海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%9F%8E%E5%B8%82%E6%97%A9%E9%A4%90%E5%A4%96%E5%B8%A6--1rueko9c0um8h"
+    },
+    {
+     "record": 171,
+     "style": "高明度微缩留白",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%A7%91%E6%8A%80%E4%BA%A7%E5%93%81%E5%8F%91%E5%B8%83%E6%B5%B7%E6%8A%A5--1l8dxjdsl5715"
+    },
+    {
+     "record": 525,
+     "style": "巨型数字嵌景·温柔纪念感·生日海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%84%BF%E7%AB%A5%E7%94%9F%E6%97%A5%E6%95%B0%E5%AD%97%E6%B5%B7%E6%8A%A5--124e8zk1885e8s"
+    }
+   ]
+  },
+  {
+   "id": "T17",
+   "name": "建筑制图编辑",
+   "scenes": "建筑、工业器物、设计品牌、展览",
+   "default_ratio": "3:4",
+   "identity": "真实结构件与有依据的几何线共享轴线，文字保持疏远而精密。",
+   "invariants": [
+    "大型结构实体偏置",
+    "圆弧与基准线服务实体结构",
+    "竖排标题与宽空场平衡"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "subject": "可见主体及不可改变的识别特征",
+    "background": "底场的色彩与明度角色",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "ink": "文字与结构的深浅颜色，必须与承载面有清楚反差",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。把{subject}以真实结构呈现并偏置一侧，另一侧保留大块{background}空场。依据对象自身形态添加少量圆弧、切线、轴线与定位点，共享清楚的几何基准；{motif}作为唯一贯穿路径。标题“{headline}”用挺拔宋体或清楚无衬线分成疏朗短列，说明{copy}退为小字。{primary}为低饱和材质色，{ink}承载文字与关键节点，{accent}为稀薄的制图辅助线。实体呈{material}，柔侧光与浅影保持一致。{text_rule}。",
+   "avoid": "不要虚构尺寸、工程标注或结构连接；不要把线框做成随意花纹；不要统一棕色做旧。",
+   "presets": [
+    {
+     "id": "T17-1",
+     "name": "圆规素纸",
+     "material": "细纸纤维、哑光实物、淡制图线",
+     "mood": "精密、温和",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T17-2",
+     "name": "线框嵌图",
+     "material": "染色摄影切片、细白结构线、洁净白场",
+     "mood": "理性、庄重",
+     "structural_override": "将偏置单实体改为下部近对称结构群像，真实摄影切片嵌入封闭轮廓；连续细白线依据对象结构形成窗格。标题改为右上短行，左上少量放射细线收束到群像。保留结构可信与大空场，不沿用竖排标题和素纸圆规线。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 316,
+     "style": "圆规制图留白·素纸理性·建筑品牌海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E9%AB%98%E7%AB%AF%E5%BB%BA%E7%AD%91%E4%BA%8B%E5%8A%A1%E6%89%80--1hf7oop1t9gfs1"
+    },
+    {
+     "record": 35,
+     "style": "几何线框嵌图·理性庄重·文化展览海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%9F%8E%E5%B8%82%E5%BB%BA%E7%AD%91%E6%96%87%E5%8C%96%E5%B1%95--1iicfa9b38f2h"
+    },
+    {
+     "record": 238,
+     "style": "编织几何清透信息",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E5%BC%80%E6%94%BE%E6%97%A5--wx1tvf6spdaz"
+    }
+   ]
+  },
+  {
+   "id": "T18",
+   "name": "旅行与酒店框景",
+   "scenes": "文旅、酒店、目的地预告、空间体验",
+   "default_ratio": "3:4",
+   "identity": "框景把观看者带入第二空间，说明围绕入口组织。",
+   "invariants": [
+    "一处可辨识框景入口",
+    "框内与框外明度有层级",
+    "文字不遮住关键空间特征"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "scene": "真实或明确标记为概念的环境",
+    "subject": "可见主体及不可改变的识别特征",
+    "reference": "参考文件及用途；无则写无，真实身份一致任务需身份参考",
+    "lighting": "主光方向、软硬与环境回填；平面模板不强加摄影布光",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "background": "底场的色彩与明度角色",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。用{motif}指定的窗、拱门或舷窗构成主要框景，框内展示{scene}，{subject}位于可解释尺度的位置，关键建筑与地点特征依据{reference}保持可信。{lighting}从框内或一侧进入，框体呈{material}，内外明度逐层过渡。{background}承担框外留白，{primary}来自场景，{accent}只标记一个入口节点。标题“{headline}”与{copy}围绕框景外侧疏朗排列。{text_rule}。",
+   "avoid": "不要虚构酒店设施、房价、地标和旅行凭证；不要同时堆叠多个框景；不要用光效取代空间。",
+   "presets": [
+    {
+     "id": "T18-1",
+     "name": "温润拱窗",
+     "material": "浅石材、自然景观、柔和日光",
+     "mood": "安静、欢迎",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T18-2",
+     "name": "舷窗预告",
+     "material": "厚实哑光框、雾化玻璃、低细节远景",
+     "mood": "神秘、克制",
+     "structural_override": "舷窗外侧使用深暗净色场，窗内为明亮低细节远景与雾化玻璃。只有用户提供真实行程信息时，才叠加半透明通行票据式信息；没有信息则省略。不要沿用温暖拱窗的浅石材背景。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 134,
+     "style": "拱窗花束·清透浪漫·酒店海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%86%AC%E6%97%A5%E5%A9%9A%E7%A4%BC%E8%8A%B1%E8%89%BA%E9%A2%84%E8%AE%A2--1v0chbe1kjx6v4"
+    },
+    {
+     "record": 280,
+     "style": "海天大留白·清透静谧·爱情海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%97%85%E8%A1%8C%E6%B0%91%E5%AE%BF%E6%83%85%E4%BE%A3%E6%88%BF%E6%B5%B7%E6%8A%A5--mv0k3y1s1gabm"
+    },
+    {
+     "record": 335,
+     "style": "舷窗票据叠映·冷峻神秘·旅行预告海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%97%85%E8%A1%8C%E7%BA%AA%E5%BD%95%E7%89%87%E4%B8%8A%E7%BA%BF%E6%B5%B7%E6%8A%A5--64qyvk10u97by"
+    },
+    {
+     "record": 423,
+     "style": "舷窗框景·温润航旅·目的地海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%B8%85%E6%99%A8%E6%B5%B7%E5%B2%9B%E8%88%AA%E7%BA%BF--nmpb3o2ufl0s"
+    }
+   ]
+  },
+  {
+   "id": "T19",
+   "name": "文博材质巨像",
+   "scenes": "陶艺、文物、艺术展、材料专题",
+   "default_ratio": "3:4",
+   "identity": "材料孔隙与巨大的暗腔制造尺度，洁净空场和疏远文字维持静穆。",
+   "invariants": [
+    "近摄实体具有纪念碑尺度",
+    "深暗腔或断口形成第一焦点",
+    "高明度空场与暗部强分区"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "subject": "可见主体及不可改变的识别特征",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "lighting": "主光方向、软硬与环境回填；平面模板不强加摄影布光",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "background": "底场的色彩与明度角色",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。极近距离呈现{subject}的{motif}，让粗粝实体从一侧及底边越界，内部暗腔或断口保留最深暗值。{lighting}只勾亮受光表层与厚边，{material}的孔隙、纹理与微地形集中在受光区域，暗腔不补亮。另一侧{background}形成洁净空场，标题“{headline}”竖向疏排，{copy}在暗区以清晰反色排列。近单色{primary}承担主要体量，{accent}仅为一个微小提示点。{text_rule}。",
+   "avoid": "不要多色装饰、全局噪点和泛黄污渍；不要照亮暗腔；不得编造展品年代、作者和馆藏编号。",
+   "presets": [
+    {
+     "id": "T19-1",
+     "name": "粗陶暗腔",
+     "material": "哑光烧结、真实孔隙、厚实断口",
+     "mood": "静穆、沉重",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T19-2",
+     "name": "石材考据",
+     "material": "矿物切面、微地形、浅受光边缘",
+     "mood": "冷峻、沉静",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 82,
+     "style": "粗陶洞口·黑白静穆·陶艺展海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E9%BB%91%E9%99%B6%E5%BC%80%E5%B9%95%E4%B8%BB%E8%A7%86%E8%A7%89--b1hmqk4s6y44"
+    },
+    {
+     "record": 123,
+     "style": "巨石压纸·冷峻考据·展览海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%86%B0%E5%B7%9D%E6%A0%B7%E6%9C%AC%E6%A1%A3%E6%A1%88--hb54jdzlja"
+    },
+    {
+     "record": 241,
+     "style": "器影留白·纸感清雅·展览海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%8F%A4%E7%B1%8D%E8%A3%85%E5%B8%A7%E6%96%87%E5%8C%96%E6%B2%99%E9%BE%99--1pnub6w1cjwmi"
+    },
+    {
+     "record": 662,
+     "style": "粗陶洞口·黑白静穆·陶艺展海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%99%A8%E7%89%A9%E6%94%B6%E8%97%8F%E5%AF%BC%E8%A7%88--1i92akv167exvj"
+    }
+   ]
+  },
+  {
+   "id": "T20",
+   "name": "会议与人物信息系统",
+   "scenes": "会议、嘉宾、团队、课程阵容",
+   "default_ratio": "3:4",
+   "identity": "重复单元共享节奏，一组定向斜切将照片与信息连接。",
+   "invariants": [
+    "所有人物模块共享网格与尺度",
+    "每个模块有同向斜切或斜带",
+    "名称与身份信息保持清楚"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "data": "已核实事实、内容要点、数值和单位；禁止模型补造",
+    "reference": "参考文件及用途；无则写无，真实身份一致任务需身份参考",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "background": "底场的色彩与明度角色",
+    "ink": "文字与结构的深浅颜色，必须与承载面有清楚反差",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。依据{data}将嘉宾或内容单元排成统一模块网格，照片按{reference}保持身份，图像尺度、内边距和名称基线一致。每个单元用同方向的{motif}斜带或切角连接图像与文字，局部越界形成节拍，不能退化成普通圆角卡片。顶部标题“{headline}”重量显著高于副说明，底部{copy}按组收束。{background}为明亮净色场，{ink}为深色结构，{accent}集中在斜切层，图像低饱和。{text_rule}。",
+   "avoid": "不要虚构嘉宾、头衔、日期、主办方与徽标；人数少时不复制头像凑网格；不要花纹阴影干扰姓名。",
+   "presets": [
+    {
+     "id": "T20-1",
+     "name": "清爽斜带",
+     "material": "浅色背景、三层错位斜带、低饱和照片",
+     "mood": "清楚、可信",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T20-2",
+     "name": "强色切角",
+     "material": "明亮强色底、深色背板、黑白抠像",
+     "mood": "年轻、锐利",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 65,
+     "style": "斜带人像·清爽会务·会议海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%A4%9A%E4%BA%BA%E5%B3%B0%E4%BC%9A%E5%98%89%E5%AE%BE%E9%98%B5%E5%AE%B9%E6%B5%B7%E6%8A%A5--1wk3x7x1y0kond"
+    },
+    {
+     "record": 85,
+     "style": "斜切肖像卡·白底金灰清朗·团队介绍页",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%B4%BB%E5%8A%A8%E5%98%89%E5%AE%BE%E9%98%B5%E5%AE%B9%E9%A1%B5--upkfyt137wdhh"
+    },
+    {
+     "record": 274,
+     "style": "人像切角排版·荧黄黑白锐利·会议海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/ai%E5%BC%80%E5%8F%91%E8%80%85%E5%B3%B0%E4%BC%9A--16yvitp1y7orxd"
+    },
+    {
+     "record": 509,
+     "style": "人像切角排版·荧黄黑白锐利·会议海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%95%B0%E5%AD%97%E8%89%BA%E6%9C%AF%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%AE%BA%E5%9D%9B--1nvqp7mrlgi4o"
+    }
+   ]
+  },
+  {
+   "id": "T21",
+   "name": "九宫格日常手账",
+   "scenes": "社媒、产品系列、生活记录、主题集合",
+   "default_ratio": "1:1",
+   "identity": "统一矩阵中保留不同镜头密度，手绘标记必须回应格内内容。",
+   "invariants": [
+    "真实3×3矩阵",
+    "各格内容互补而非九份复制",
+    "注释与照片中的对象相关"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "subject": "可见主体及不可改变的识别特征",
+    "scene": "真实或明确标记为概念的环境",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。将{subject}拆成九个互补的{scene}片段，以3×3矩阵排列。统一色温、沟槽和总体{primary}色调，但每格改变景别、裁切与留白位置；照片呈自然日常拍摄质感。以{material}手绘{motif}标记，在对象边缘、动作路径或空白处做少量注释，标记大小随内容调整。标题“{headline}”只占允许的一格空域或独立外栏，{copy}短小。{text_rule}。",
+   "avoid": "不要九格同一张图；不要涂鸦遮住产品或脸；不要漂浮贴纸平均铺满。",
+   "presets": [
+    {
+     "id": "T21-1",
+     "name": "绒线注释",
+     "material": "白色绒线颗粒边、日常照片、柔和室内光",
+     "mood": "亲密、温暖",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T21-2",
+     "name": "冷静名录",
+     "material": "真实材料近景、干净边界、深色底栏",
+     "mood": "清楚、有目录感",
+     "structural_override": "改为名录或商品系列目录：九格采用干净摄影裁切与独立短标签，取消全部手绘注释；底部设置结构性深色信息带，重标题与细说明形成反差。保持矩阵、内容互补和统一尺度。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 61,
+     "style": "冷静名录格阵",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%96%B0%E9%94%90%E5%AE%B6%E5%85%B7%E9%80%89%E5%93%81%E7%9B%AE%E5%BD%95--8vmtf41o70lmq"
+    },
+    {
+     "record": 138,
+     "style": "九宫格手绘涂鸦",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%92%96%E5%95%A1%E5%BA%97%E5%91%A8%E8%BE%B9%E6%95%A3%E6%AD%A5--1w8zlv1lqaydx"
+    },
+    {
+     "record": 422,
+     "style": "绒线涂鸦·日常暖白·贴纸模板",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E4%B8%8B%E5%8D%88%E8%8C%B6%E6%B5%B7%E6%8A%A5--3p0fxjx69lu7"
+    },
+    {
+     "record": 532,
+     "style": "九宫格手绘涂鸦",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%9F%8E%E5%B8%82%E6%BC%AB%E6%B8%B8%E7%A9%BF%E6%90%AD--14wyccibjnn0g"
+    }
+   ]
+  },
+  {
+   "id": "T22",
+   "name": "模块化演示视觉",
+   "scenes": "PPT、汇报、作品集、数据报告",
+   "default_ratio": "16:9",
+   "identity": "标题与数据先建立信息层级，图形按页的叙事功能进入共同网格。",
+   "invariants": [
+    "固定边距、基线与文字层级",
+    "版式依据内容量变化",
+    "数据数值与标注来自输入"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "audience": "受众与阅读距离；默认一般社媒读者",
+    "data": "已核实事实、内容要点、数值和单位；禁止模型补造",
+    "headline": "准确标题；不用文字时留空",
+    "background": "底场的色彩与明度角色",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "ink": "文字与结构的深浅颜色，必须与承载面有清楚反差",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "设计{ratio}的{deliverable}，主题{topic}，受众{audience}，页面内容来自{data}。在统一边距与基线网格上，标题“{headline}”优先，关键结论次之，证据和细节最后；依据当前页目的选择双栏、跨栏或稀疏模块，而非每页同版式。背景{background}、承托{primary}、强调{accent}按面积分工，文字{ink}保持清晰反差。{motif}作为一处跨栏视觉锚点，工艺{material}不可侵入正文。正文和图表轴线整齐；所有数值、单位、标签逐字来自输入。{text_rule}。",
+   "avoid": "不要把7:2:1面积比例写成明度比例；不要幻造数据或用装饰图代替证据；复杂图表应转为可编辑排版。",
+   "presets": [
+    {
+     "id": "T22-1",
+     "name": "淡块作品集",
+     "material": "哑光浅色模块、轻接触阴影、扁平细图形",
+     "mood": "轻盈、亲和",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T22-2",
+     "name": "理性报告",
+     "material": "平整净底、扁平数据图、明确深色结构",
+     "mood": "严谨、利落",
+     "structural_override": "用明确的非对称双栏或三栏及顶标色带固定阅读，图表采用扁平、可读的编码；取消软卡片投影与纸面工艺，不牺牲正文和数据给装饰。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 21,
+     "style": "竹影留白·静谧雅致·目录内页",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%8D%9A%E7%89%A9%E9%A6%86%E6%A4%8D%E7%89%A9%E6%A0%87%E6%9C%AC%E6%95%B0%E5%AD%97%E5%B1%95%E9%99%88--cj4uea5k7i80"
+    },
+    {
+     "record": 57,
+     "style": "淡块错位·清新克制·作品集",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%A4%BE%E5%8C%BA%E5%92%96%E5%95%A1%E5%93%81%E7%89%8C%E6%9B%B4%E6%96%B0%E4%BD%9C%E5%93%81%E9%9B%86--xgcd1545f9jh"
+    },
+    {
+     "record": 318,
+     "style": "细框留白·柔和理性·汇报目录",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%96%B9%E6%A1%881--16fof9serniia"
+    },
+    {
+     "record": 403,
+     "style": "非对称网格·理性严谨·数据报告",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%88%B6%E9%80%A0%E4%B8%9A%E9%9B%B6%E5%BA%9F%E6%96%99%E6%94%B9%E8%BF%9B--1ed7lf91tyojbd"
+    },
+    {
+     "record": 556,
+     "style": "东方极简-x-ppt",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%8F%A4%E4%BA%BA%E4%B8%8E%E7%AB%B9%E4%B8%BB%E9%A2%98%E6%BC%94%E7%A4%BA--slfr9b1snt8fb"
+    }
+   ]
+  },
+  {
+   "id": "T23",
+   "name": "科普与商品信息卡",
+   "scenes": "课程、步骤解释、知识分享、商品说明",
+   "default_ratio": "3:4",
+   "identity": "每组图形只解释一个命题，图与文的换位节拍代替装饰密度。",
+   "invariants": [
+    "每模块只有一条主结论",
+    "插图解释对应内容",
+    "编号和文字层级贯穿全图"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "data": "已核实事实、内容要点、数值和单位；禁止模型补造",
+    "subject": "可见主体及不可改变的识别特征",
+    "motif": "一处由主题语义推导的轮廓、线索或图形；不能堆多个符号",
+    "background": "底场的色彩与明度角色",
+    "ink": "文字与结构的深浅颜色，必须与承载面有清楚反差",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "material": "具体成像或制作工艺，优先使用预设",
+    "headline": "准确标题；不用文字时留空",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}，内容仅来自{data}。先整理为三组以内的主结论，每组包括短标题、必要说明与一幅解释性{subject}图。内容模块纵向排列，图与文字左右交替，{motif}的柔曲线只用于模块分隔与阅读牵引。{background}为安静浅底，白色内容岛保持宽内边距，{ink}用于线描与正文，{accent}仅负责序号。图像呈{material}，信息短句化；标题“{headline}”准确，数字和因果不增补。{text_rule}。",
+   "avoid": "不要无来源统计、研究结论或营养功效；不要靠很小字号塞入长文；信息过多先拆张。",
+   "presets": [
+    {
+     "id": "T23-1",
+     "name": "友好研究卡",
+     "material": "朴拙单线、柔曲线白岛、少量黑填",
+     "mood": "可信、亲近",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T23-2",
+     "name": "水彩商品条",
+     "material": "透明水彩小图、三段白卡、天然低饱和色",
+     "mood": "清爽、自然",
+     "structural_override": "改为三条白色横卡纵向排列在浅灰底上，每条卡片用水彩小图解释一个商品属性或过程，文字与插图保持对应；取消曲线白岛与超大序号，不强求左右交替。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 411,
+     "style": "曲线图文穿插·清爽手绘·研究科普海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%A4%BE%E5%8C%BA%E8%8A%82%E7%BA%A6%E9%A3%9F%E7%89%A9%E5%80%A1%E8%AE%AE%E6%B5%B7%E6%8A%A5--10glesn7n5h3"
+    },
+    {
+     "record": 424,
+     "style": "三联白卡·清爽水彩·食品海报",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%83%9F%E7%86%8F%E5%9F%B9%E6%A0%B9%E6%97%A9%E9%A4%90%E5%8D%A1--1nad7jl1o9m4ed"
+    },
+    {
+     "record": 216,
+     "style": "清透留白信息插画",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E9%9C%9C%E9%99%8D%E6%9F%BF%E5%AD%90%E5%86%9C%E4%BA%A7%E5%93%81%E6%B5%B7%E6%8A%A5--5j9ty7c9z8pj"
+    },
+    {
+     "record": 401,
+     "style": "清透信息图",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E5%92%96%E5%95%A1%E8%B1%86%E9%A3%8E%E5%91%B3%E6%8B%86%E8%A7%A3--qoisds13by2b6"
+    }
+   ]
+  },
+  {
+   "id": "T24",
+   "name": "日签与编辑纪念",
+   "scenes": "早安日历、城市问候、节令日签",
+   "default_ratio": "3:4",
+   "identity": "日期是锚点，实体照片是核心，一道问候跨过照片和纸面。",
+   "invariants": [
+    "日期、照片、寄语三层清楚",
+    "照片具有实体纸边或错位衬纸",
+    "最短问候横跨照片边界"
+   ],
+   "variables": {
+    "ratio": "画面比例，由模板默认或交付需求决定",
+    "deliverable": "输出形式，如海报、封面、单页图卡；默认海报",
+    "topic": "核心主题，必须提供；不能只写高级感",
+    "scene": "真实或明确标记为概念的环境",
+    "subject": "可见主体及不可改变的识别特征",
+    "background": "底场的色彩与明度角色",
+    "data": "已核实事实、内容要点、数值和单位；禁止模型补造",
+    "headline": "准确标题；不用文字时留空",
+    "copy": "准确副文案、署名、日期、价格等；没有则省略",
+    "lighting": "主光方向、软硬与环境回填；平面模板不强加摄影布光",
+    "primary": "主题主色的角色，不是强制固定色号",
+    "accent": "只承担一个注意力节点的小面积强调色",
+    "text_rule": "无字/精确短文案/先生成无字底图后排版，三选一"
+   },
+   "prompt_template": "制作{ratio}的{deliverable}，主题{topic}。将{scene}中的{subject}化为主要纪实照片，带宽白纸边或两块错位低饱和衬纸，置于{background}暖亮纸面。日期、星期与地点按{data}准确排布，缺失则省略。标题“{headline}”以细衬线或可辨认手写笔触跨过照片一角与纸面，底部寄语{copy}只保留短句。{lighting}让照片内的空间自然，纸边与胶带有浅接触阴影，{primary}来自照片，仅用{accent}作一处衬纸回声。{text_rule}。",
+   "avoid": "不要猜测日期、星期、天气或名言出处；不要用装饰性随机文本；纸纹只出现在纸面。",
+   "presets": [
+    {
+     "id": "T24-1",
+     "name": "城市晨光",
+     "material": "自然纪实照片、细棉浆纸、半透明胶带",
+     "mood": "清晨、温润",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    },
+    {
+     "id": "T24-2",
+     "name": "节令静物",
+     "material": "真实植物或器物照片、整齐纸边、浅色衬纸",
+     "mood": "含蓄、有纪念感",
+     "structural_override": "无；仅改变本预设的工艺与情绪，保持基础构图关系。"
+    }
+   ],
+   "evidence": [
+    {
+     "record": 429,
+     "style": "早安-x-日签-x-杂志",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%B7%B1%E5%9C%B3%E6%B5%B7%E6%BB%A8%E6%97%A9%E5%AE%89%E6%97%A5%E5%8E%86--vwub1b18zrp5z"
+    },
+    {
+     "record": 603,
+     "style": "早安-x-日签-x-杂志",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E6%98%86%E6%98%8E%E8%8A%B1%E5%BA%97%E6%97%A9%E5%AE%89%E6%97%A5%E7%AD%BE--wgtif91rssq5t"
+    },
+    {
+     "record": 686,
+     "style": "早安-x-日签-x-杂志",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E7%BA%BD%E7%BA%A6%E8%A1%97%E6%99%AF%E6%97%A9%E5%AE%89%E6%97%A5%E7%AD%BE--usvw9f5k974z"
+    },
+    {
+     "record": 688,
+     "style": "早安-x-日签-x-杂志",
+     "source_url": "https://vip.xiaoxiaodong.ai/open-source/image/%E8%A5%BF%E5%AE%89%E5%9F%8E%E5%A2%99%E6%99%A8%E9%97%B4%E6%97%A5%E7%AD%BE--w6twqa1syfq4a"
+    }
+   ]
+  }
+ ],
+ "provenance": "Distilled from 689 public-area records of https://vip.xiaoxiaodong.ai/open-source (archived 2026-10-04). Raw prompts and preview images are not redistributed here."
+}

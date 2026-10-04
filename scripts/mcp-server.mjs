@@ -2,7 +2,7 @@
 // MCP server (stdio, newline-delimited JSON-RPC). Zero dependencies.
 import { TOOLS, runTool } from './lib/tools.mjs';
 
-const SERVER = { name: 'qiaomu-codex-imagegen', version: '0.2.0' };
+const SERVER = { name: 'qiaomu-codex-imagegen', version: '0.3.0' };
 const send = message => process.stdout.write(JSON.stringify({ jsonrpc: '2.0', ...message }) + '\n');
 let buffer = '';
 process.stdin.setEncoding('utf8');

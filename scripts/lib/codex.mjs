@@ -4,8 +4,9 @@ import { spawn } from 'node:child_process';
 import { access, copyFile, mkdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import { extname, join, resolve } from 'node:path';
+import { flattenAlpha } from './png.mjs';
 
-export const CLIENT = { name: 'qiaomu_codex_imagegen', title: 'Qiaomu Codex ImageGen', version: '0.2.0' };
+export const CLIENT = { name: 'qiaomu_codex_imagegen', title: 'Qiaomu Codex ImageGen', version: '0.3.0' };
 export const DEFAULT_TIMEOUT_S = 600;
 const MIME = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
 export const mimeOf = path => MIME[extname(path).toLowerCase()] || 'image/png';
@@ -145,6 +146,8 @@ export async function generate(options) {
     image.size = image.size; image.dimensions = await imageSize(image.path).catch(() => undefined);
     if (want && image.dimensions) { const got = image.dimensions.width / image.dimensions.height; image.ratioOk = Math.abs(got - want) / want < 0.06; }
   }
+  // A poster must be opaque: Codex sometimes returns transparent regions, which viewers show as black or checkerboard.
+  if (options.transparentBackground !== true) for (const image of images) { const r = await flattenAlpha(image.path, { background: options.background || '#ffffff' }).catch(() => ({ flattened: false })); if (r.flattened) { image.flattened = true; image.transparent = r.transparent; image.size = (await stat(image.path)).size; } }
   const failures = runs.filter(r => r.status === 'rejected').map(r => (r.reason instanceof Error ? r.reason.message : String(r.reason)));
   return { images, failures, outDir };
 }
