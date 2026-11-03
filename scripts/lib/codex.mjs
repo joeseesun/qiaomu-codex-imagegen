@@ -3,7 +3,7 @@
 import { spawn } from 'node:child_process';
 import { access, copyFile, mkdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { homedir } from 'node:os';
-import { extname, join, resolve } from 'node:path';
+import { extname, isAbsolute, join, resolve } from 'node:path';
 import { flattenAlpha } from './png.mjs';
 
 export const CLIENT = { name: 'qiaomu_codex_imagegen', title: 'Qiaomu Codex ImageGen', version: '0.3.0' };
@@ -18,7 +18,9 @@ export const expandHome = p => String(p).replace(/^~(?=\/|$)/, homedir());
 // Minimal JSON-RPC client for `codex app-server` (newline-delimited JSON, no "jsonrpc" field).
 class CodexProcess {
   constructor(bin, args, cwd) {
-    this.child = spawn(bin, args, { cwd, stdio: ['pipe', 'pipe', 'pipe'], env: process.env });
+    // Windows: a npm-installed `codex` resolves to codex.cmd (a batch shim), which Node can only launch via a shell.
+    const winShell = process.platform === 'win32' && (bin === 'codex' || !extname(bin) || /\.cmd$/i.test(bin));
+    this.child = spawn(winShell ? `"${bin}"` : bin, args, { cwd, stdio: ['pipe', 'pipe', 'pipe'], env: process.env, shell: winShell, windowsHide: true });
     this.nextId = 1; this.pending = new Map(); this.buffer = ''; this.stderr = ''; this.closed = false;
     this.onNotification = () => {}; this.onClose = () => {};
     this.child.stdout.setEncoding('utf8');
@@ -52,7 +54,14 @@ class CodexProcess {
     });
   }
   notify(method, params = {}) { this.write({ method, params }); }
-  stop() { this.closed = true; try { this.child.kill('SIGTERM'); } catch { /* gone */ } setTimeout(() => { try { this.child.kill('SIGKILL'); } catch { /* gone */ } }, 2000).unref(); }
+  stop() {
+    this.closed = true;
+    if (process.platform === 'win32' && this.child.pid) { // shell mode wraps codex in cmd.exe — kill the whole tree
+      spawn('taskkill', ['/pid', String(this.child.pid), '/T', '/F'], { stdio: 'ignore', windowsHide: true }).on('error', () => {});
+      return;
+    }
+    try { this.child.kill('SIGTERM'); } catch { /* gone */ } setTimeout(() => { try { this.child.kill('SIGKILL'); } catch { /* gone */ } }, 2000).unref();
+  }
 }
 
 const RELAY = 'You are an image-generation relay. Call the built-in image generation tool exactly once for the user\'s request, then reply with one short sentence. Do not run shell commands, write code, browse, or ask questions.';
@@ -129,7 +138,7 @@ export { parseRatio };
 export async function generate(options) {
   const { finalPrompt, referenceImages = [], outDir: rawOut, fileName, count = 1, aspectRatio } = options;
   if (!String(finalPrompt || '').trim()) throw new Error('prompt is required');
-  for (const ref of referenceImages) if (!ref.startsWith('/') || !(await exists(ref))) throw new Error(`reference image not found (use an absolute path): ${ref}`);
+  for (const ref of referenceImages) if (!isAbsolute(ref) || !(await exists(ref))) throw new Error(`reference image not found (use an absolute path): ${ref}`);
   const outDir = resolve(expandHome(rawOut || defaultOutDir()));
   await mkdir(outDir, { recursive: true });
   const stamp = new Date().toISOString().replace(/[-:T]/g, '').slice(0, 14);
